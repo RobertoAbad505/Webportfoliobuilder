@@ -1,8 +1,9 @@
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 import { Button } from "./ui/button";
 import { AnimatedBackground } from "./AnimatedBackground";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import resumeData from "../../data/resume.json";
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -17,7 +18,7 @@ export function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = resumeData.personalInfo.resumeFile;
     link.download = "Resume.pdf";
     link.click();
   };
@@ -48,7 +49,7 @@ export function Hero() {
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <span className="text-white text-5xl">👨‍💻</span>
+            <span className="text-white text-5xl">{resumeData.personalInfo.avatar}</span>
           </motion.div>
           
           <motion.h1
@@ -59,7 +60,7 @@ export function Hero() {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Roberto Abad
+              {resumeData.personalInfo.name.split(' ')[0]} {resumeData.personalInfo.name.split(' ')[1]}
             </span>
           </motion.h1>
           
@@ -69,7 +70,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Software Engineer
+            {resumeData.personalInfo.title}
           </motion.h2>
           
           <motion.p
@@ -78,9 +79,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Passionate about building scalable web applications
-            and solving complex problems. Specializing in
-            full-stack development with modern technologies.
+            {resumeData.personalInfo.description}
           </motion.p>
         </motion.div>
 
@@ -119,7 +118,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 1 }}
         >
           <motion.a
-            href="https://github.com/yourusername"
+            href={resumeData.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -128,7 +127,7 @@ export function Hero() {
             <Github size={28} />
           </motion.a>
           <motion.a
-            href="https://linkedin.com/in/yourusername"
+            href={resumeData.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -137,11 +136,20 @@ export function Hero() {
             <Linkedin size={28} />
           </motion.a>
           <motion.a
-            href="mailto:your.email@example.com"
+            href={`mailto:${resumeData.personalInfo.email}`}
             className="text-gray-400 hover:text-blue-400 transition-colors"
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <Mail size={28} />
+          </motion.a>
+          <motion.a
+            href={resumeData.socialLinks.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-green-400 transition-colors"
+            whileHover={{ scale: 1.2, y: -5 }}
+          >
+            <MessageSquare size={28} />
           </motion.a>
         </motion.div>
       </div>

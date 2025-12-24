@@ -27,6 +27,8 @@ export function Navigation() {
     { label: 'Experience', id: 'experience' },
     { label: 'Projects', id: 'projects' },
     { label: 'Achievements', id: 'achievements' },
+    { label: 'Languages', id: 'languages' },
+    { label: 'Testimonials', id: 'testimonials' },
     { label: 'Contact', id: 'contact' },
   ];
 

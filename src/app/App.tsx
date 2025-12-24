@@ -1,11 +1,14 @@
-import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Skills } from './components/Skills';
-import { Experience } from './components/Experience';
-import { Projects } from './components/Projects';
-import { Achievements } from './components/Achievements';
-import { Contact } from './components/Contact';
+import { Navigation } from "./components/Navigation";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Skills } from "./components/Skills";
+import { Experience } from "./components/Experience";
+import { Projects } from "./components/Projects";
+import { Achievements } from "./components/Achievements";
+import { Contact } from "./components/Contact";
+import { Education } from "./components/Education";
+import { Languages } from "./components/Languages";
+import { Testimonials } from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -17,12 +20,16 @@ export default function App() {
       <Experience />
       <Projects />
       <Achievements />
+      <Languages />
+      <Testimonials />
+      <Education />
       <Contact />
       
       <footer className="bg-black text-white py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Roberto Abad. All rights reserved.
+            © {new Date().getFullYear()} Roberto Abad. All
+            rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Built with React, TypeScript, and Tailwind CSS
