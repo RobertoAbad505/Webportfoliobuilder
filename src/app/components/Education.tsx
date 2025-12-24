@@ -1,20 +1,21 @@
 import { GraduationCap, BookOpen, MapPin, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { motion } from 'motion/react';
-import resumeData from '../../data/resume.json';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Education() {
+  const { data } = useLanguage();
+
   return (
     <section id="education" className="py-20 bg-gray-950 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-center mb-4 text-white">Education</h2>
+        <h2 className="text-4xl text-center mb-4 text-white">{data.education.title}</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>
 
         {/* Degrees */}
         <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-2xl text-white mb-6">Degrees</h3>
           <div className="space-y-6">
-            {resumeData.education.map((edu, index) => (
+            {data.education.degrees.map((edu, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -20 }}
@@ -62,9 +63,9 @@ export function Education() {
 
         {/* Courses & Certifications */}
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl text-white mb-6">Courses & Certifications</h3>
+          <h3 className="text-2xl text-white mb-6">{data.education.coursesTitle}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {resumeData.courses.map((course, index) => (
+            {data.education.courses.map((course, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -85,12 +86,14 @@ export function Education() {
                     <p className="text-gray-400 text-sm mb-2">{course.provider}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-gray-500 text-sm">{course.period}</span>
-                      <a
-                        href="#"
-                        className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
-                      >
-                        {course.credential}
-                      </a>
+                      {course.credential && (
+                        <a
+                          href="#"
+                          className="text-blue-400 hover:text-blue-300 text-sm transition-colors"
+                        >
+                          {course.credential}
+                        </a>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

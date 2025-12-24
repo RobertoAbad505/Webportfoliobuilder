@@ -3,10 +3,11 @@ import { Button } from "./ui/button";
 import { AnimatedBackground } from "./AnimatedBackground";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import resumeData from "../../data/resume.json";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
+  const { data } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,7 @@ export function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = resumeData.personalInfo.resumeFile;
+    link.href = data.personalInfo.resumeFile;
     link.download = "Resume.pdf";
     link.click();
   };
@@ -49,7 +50,7 @@ export function Hero() {
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <span className="text-white text-5xl">{resumeData.personalInfo.avatar}</span>
+            <span className="text-white text-5xl">{data.personalInfo.avatar}</span>
           </motion.div>
           
           <motion.h1
@@ -60,7 +61,7 @@ export function Hero() {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              {resumeData.personalInfo.name.split(' ')[0]} {resumeData.personalInfo.name.split(' ')[1]}
+              {data.personalInfo.name.split(' ')[0]} {data.personalInfo.name.split(' ')[1]}
             </span>
           </motion.h1>
           
@@ -70,7 +71,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {resumeData.personalInfo.title}
+            {data.personalInfo.title}
           </motion.h2>
           
           <motion.p
@@ -79,7 +80,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            {resumeData.personalInfo.description}
+            {data.personalInfo.description}
           </motion.p>
         </motion.div>
 
@@ -95,7 +96,7 @@ export function Hero() {
             className="gap-2 bg-blue-600 hover:bg-blue-700"
           >
             <Download size={20} />
-            Download Resume
+            {data.buttons.downloadResume}
           </Button>
           <Button
             onClick={() =>
@@ -107,7 +108,7 @@ export function Hero() {
             size="lg"
             className="border-gray-600 text-gray-300 hover:bg-gray-800"
           >
-            Get in Touch
+            {data.buttons.getInTouch}
           </Button>
         </motion.div>
 
@@ -118,7 +119,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 1 }}
         >
           <motion.a
-            href={resumeData.socialLinks.github}
+            href={data.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -127,7 +128,7 @@ export function Hero() {
             <Github size={28} />
           </motion.a>
           <motion.a
-            href={resumeData.socialLinks.linkedin}
+            href={data.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -136,14 +137,14 @@ export function Hero() {
             <Linkedin size={28} />
           </motion.a>
           <motion.a
-            href={`mailto:${resumeData.personalInfo.email}`}
+            href={`mailto:${data.personalInfo.email}`}
             className="text-gray-400 hover:text-blue-400 transition-colors"
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <Mail size={28} />
           </motion.a>
           <motion.a
-            href={resumeData.socialLinks.whatsapp}
+            href={data.socialLinks.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-green-400 transition-colors"

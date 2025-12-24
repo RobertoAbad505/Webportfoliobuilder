@@ -2,30 +2,34 @@ import { Mail, MapPin, Phone, Calendar } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { motion } from 'motion/react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Contact() {
+  const { data } = useLanguage();
+
   const handleCalendlyClick = () => {
-    // Replace with your actual Calendly link
-    window.open('https://calendly.com/yourusername', '_blank');
+    if (data.socialLinks.calendly) {
+      window.open(data.socialLinks.calendly, '_blank');
+    }
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      label: data.contact.labels.email,
+      value: data.personalInfo.email,
+      href: `mailto:${data.personalInfo.email}`,
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      label: data.contact.labels.phone,
+      value: data.personalInfo.phone,
+      href: `tel:${data.personalInfo.phone.replace(/\s/g, '')}`,
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'San Francisco, CA',
+      label: data.contact.labels.location,
+      value: data.personalInfo.location,
       href: null,
     },
   ];
@@ -33,15 +37,14 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-center mb-4 text-white">Get In Touch</h2>
+        <h2 className="text-4xl text-center mb-4 text-white">{data.contact.title}</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>
 
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gray-950/50 backdrop-blur-lg border-gray-800 mb-8">
             <CardContent className="pt-6">
               <p className="text-lg text-gray-300 text-center mb-8">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be
-                part of your visions. Feel free to reach out!
+                {data.contact.description}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -76,20 +79,22 @@ export function Contact() {
                 ))}
               </div>
 
-              <div className="text-center">
-                <Button size="lg" onClick={handleCalendlyClick} className="gap-2 bg-blue-600 hover:bg-blue-700">
-                  <Calendar size={20} />
-                  Schedule a Meeting
-                </Button>
-                <p className="text-sm text-gray-500 mt-3">
-                  Book a time slot that works for you
-                </p>
-              </div>
+              {data.socialLinks.calendly && (
+                <div className="text-center">
+                  <Button size="lg" onClick={handleCalendlyClick} className="gap-2 bg-blue-600 hover:bg-blue-700">
+                    <Calendar size={20} />
+                    {data.contact.buttonText}
+                  </Button>
+                  <p className="text-sm text-gray-500 mt-3">
+                    {data.contact.buttonSubtext}
+                  </p>
+                </div>
+              )}
             </CardContent>
           </Card>
 
           <div className="text-center text-gray-400">
-            <p>Looking forward to hearing from you!</p>
+            <p>{data.contact.footer}</p>
           </div>
         </div>
       </div>

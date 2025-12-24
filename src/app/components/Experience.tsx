@@ -1,55 +1,19 @@
 import { Briefcase, Calendar } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { motion } from 'motion/react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Experience() {
-  const experiences = [
-    {
-      title: 'Senior Software Engineer',
-      company: 'Tech Company Inc.',
-      period: 'Jan 2022 - Present',
-      location: 'San Francisco, CA',
-      description: [
-        'Led development of microservices architecture serving 1M+ users',
-        'Mentored junior developers and conducted code reviews',
-        'Improved application performance by 40% through optimization',
-      ],
-      technologies: ['React', 'Node.js', 'AWS', 'PostgreSQL'],
-    },
-    {
-      title: 'Software Engineer',
-      company: 'Startup XYZ',
-      period: 'Mar 2020 - Dec 2021',
-      location: 'Remote',
-      description: [
-        'Built and maintained customer-facing web applications',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Collaborated with product team to deliver new features',
-      ],
-      technologies: ['React', 'Python', 'Django', 'MongoDB'],
-    },
-    {
-      title: 'Junior Developer',
-      company: 'Digital Agency',
-      period: 'Jun 2018 - Feb 2020',
-      location: 'New York, NY',
-      description: [
-        'Developed responsive websites for various clients',
-        'Fixed bugs and improved existing codebases',
-        'Participated in daily standups and sprint planning',
-      ],
-      technologies: ['JavaScript', 'HTML/CSS', 'PHP', 'MySQL'],
-    },
-  ];
+  const { data } = useLanguage();
 
   return (
     <section id="experience" className="py-20 bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-center mb-4 text-white">Work Experience</h2>
+        <h2 className="text-4xl text-center mb-4 text-white">{data.experience.title}</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          {experiences.map((exp, index) => (
+          {data.experience.items.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}

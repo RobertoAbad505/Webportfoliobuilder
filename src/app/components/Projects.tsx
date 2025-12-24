@@ -2,17 +2,19 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
-import resumeData from '../../data/resume.json';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Projects() {
+  const { data } = useLanguage();
+
   return (
     <section id="projects" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-center mb-4 text-white">Featured Projects</h2>
+        <h2 className="text-4xl text-center mb-4 text-white">{data.projects.title}</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {resumeData.projects.map((project, index) => (
+          {data.projects.items.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

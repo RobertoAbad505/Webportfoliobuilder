@@ -1,0 +1,234 @@
+{
+  "personalInfo": {
+    "name": "Roberto Abad Ramirez Nieves",
+    "title": "Ingeniero iOS Senior",
+    "description": "Ingeniero iOS Senior con más de 7 años de experiencia construyendo aplicaciones móviles escalables, accesibles y de alto rendimiento. Lideré el desarrollo de funcionalidades para la aplicación iOS de Wells Fargo que sirve a millones de usuarios, con profunda experiencia en SwiftUI, GraphQL y arquitectura moderna de iOS.",
+    "avatar": "👨‍💻",
+    "email": "roberto.rmzabad@gmail.com",
+    "phone": "+52 442 333 0132",
+    "location": "Santiago de Querétaro, México",
+    "resumeFile": "/resume-es.pdf"
+  },
+  "socialLinks": {
+    "github": "https://github.com/RobertoAbad505",
+    "linkedin": "https://linkedin.com/in/robertoabad95",
+    "calendly": "",
+    "whatsapp": "https://wa.me/5214423330132"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraphs": [
+      "Soy un Ingeniero iOS Senior con más de 7 años de experiencia profesional entregando soluciones móviles escalables en aplicaciones bancarias, empresariales y de consumo.",
+      "Me especializo en Swift, SwiftUI, GraphQL y desarrollo con enfoque en accesibilidad, con un sólido historial modernizando bases de código legacy y mentoreando equipos de desarrollo."
+    ],
+    "highlights": [
+      {
+        "title": "Arquitectura Móvil",
+        "description": "Experiencia en SwiftUI, UIKit, Combine, MVVM-C y arquitectura iOS a escala empresarial"
+      },
+      {
+        "title": "Accesibilidad",
+        "description": "Entregué interfaces inclusivas y conformes que soportan VoiceOver, Dynamic Type y teclados externos"
+      },
+      {
+        "title": "Liderazgo",
+        "description": "Mentoreé ingenieros, lideré migraciones y colaboré de forma multifuncional en equipos Ágiles"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "categories": {
+      "Frontend": ["SwiftUI", "UIKit", "Combine", "HTML", "CSS", "JavaScript"],
+      "Backend": ["GraphQL", "REST APIs", "Django", "Java Spring"],
+      "Base de Datos": ["SQL Server", "PostgreSQL", "MySQL"],
+      "Herramientas": ["Xcode", "Apollo GraphQL", "Git", "CI/CD", "Figma", "Agile/Scrum"]
+    }
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "items": [
+      {
+        "title": "Ingeniero iOS Senior",
+        "company": "Wells Fargo Bank (vía Enhance IT)",
+        "period": "Sep 2022 - Ene 2025",
+        "location": "Área de la Bahía de San Francisco, CA, USA",
+        "description": [
+          "Lideré el desarrollo de funcionalidades nativas para la aplicación bancaria iOS de Wells Fargo que sirve a millones de usuarios diarios",
+          "Migré flujos críticos de WebViews legacy a Swift y SwiftUI, mejorando el rendimiento y UX",
+          "Introduje Apollo GraphQL CLI y modernizé la capa de red",
+          "Entregué interfaces accesibles cumpliendo estándares estrictos de cumplimiento bancario",
+          "Colaboré con equipos de Android, QA, Backend y Diseño en entornos Agile Scrum"
+        ],
+        "technologies": ["Swift", "SwiftUI", "Combine", "Apollo GraphQL", "Accesibilidad"]
+      },
+      {
+        "title": "Consultor Desarrollador iOS",
+        "company": "Enhance IT",
+        "period": "Jun 2022 - Ago 2022",
+        "location": "Atlanta, GA, USA",
+        "description": [
+          "Completé un bootcamp intensivo de iOS enfocado en SwiftUI, Combine y patrones empresariales",
+          "Capacitación en arquitecturas MVVM-C y VIPER",
+          "Preparación para despliegue con clientes empresariales a través de aplicaciones bancarias simuladas"
+        ],
+        "technologies": ["SwiftUI", "Combine", "MVVM-C", "VIPER"]
+      },
+      {
+        "title": "Coordinador de Desarrollo / Desarrollador Full Stack",
+        "company": "Eninetworks",
+        "period": "Jul 2019 - Jun 2022",
+        "location": "Querétaro, México",
+        "description": [
+          "Supervisé proyectos de software de principio a fin y mentoreé desarrolladores junior",
+          "Lideré el desarrollo de sistemas internos, bases de datos e infraestructura de servidores"
+        ],
+        "technologies": ["C#", ".NET", "SQL Server", "JavaScript"]
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "degrees": [
+      {
+        "degree": "Licenciatura en Ingeniería en Computación",
+        "institution": "Universidad Autónoma de Querétaro",
+        "location": "Querétaro, México",
+        "period": "Graduado Jul 2019",
+        "description": "Enfoque en ingeniería de software y desarrollo de sistemas",
+        "gpa": ""
+      }
+    ],
+    "coursesTitle": "Cursos y Certificaciones",
+    "courses": [
+      {
+        "name": "Bootcamp de Desarrollo iOS",
+        "provider": "Enhance IT",
+        "period": "2022",
+        "credential": ""
+      },
+      {
+        "name": "Diplomado en Desarrollo Web",
+        "provider": "Universidad Autónoma de Querétaro",
+        "period": "2019",
+        "credential": ""
+      },
+      {
+        "name": "Programación Django",
+        "provider": "Universidad Autónoma de Querétaro",
+        "period": "2019",
+        "credential": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "items": [
+      {
+        "title": "Aplicación iOS Wells Fargo",
+        "description": "Entregué nuevas funcionalidades nativas para una aplicación bancaria a gran escala, lideré la migración a GraphQL y mejoré la cobertura de accesibilidad.",
+        "technologies": ["Swift", "SwiftUI", "GraphQL", "Accesibilidad"],
+        "github": "",
+        "live": "https://apps.apple.com/us/developer/wells-fargo/id311548712",
+        "image": "🏦"
+      },
+      {
+        "title": "EniCam",
+        "description": "Aplicación móvil para monitoreo de cámaras en tiempo real en plataformas iOS y Android.",
+        "technologies": ["Swift", "AVFoundation", "Streaming"],
+        "github": "",
+        "live": "https://apps.apple.com/mx/app/enicam/id1541710259",
+        "image": "📷"
+      },
+      {
+        "title": "EniTV",
+        "description": "Plataforma de TV en streaming para dispositivos móviles.",
+        "technologies": ["iOS", "Streaming"],
+        "github": "",
+        "live": "https://play.google.com/store/apps/details?id=com.eninetworks.enitv",
+        "image": "📺"
+      }
+    ]
+  },
+  "achievements": {
+    "title": "Logros",
+    "items": [
+      {
+        "title": "Líder en Modernización GraphQL",
+        "description": "Primer ingeniero del equipo en implementar la arquitectura Apollo GraphQL en producción en Wells Fargo",
+        "date": "2023"
+      },
+      {
+        "title": "Campeón de Accesibilidad",
+        "description": "Entregué funcionalidades de accesibilidad conformes para aplicaciones bancarias empresariales",
+        "date": "2024"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Idiomas",
+    "items": [
+      {
+        "language": "Español",
+        "level": "Nativo",
+        "proficiency": 100
+      },
+      {
+        "language": "Inglés",
+        "level": "C2 - Competente",
+        "proficiency": 95
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Recomendaciones",
+    "items": [
+      {
+        "name": "John Smith",
+        "position": "Gerente de Ingeniería",
+        "company": "Wells Fargo",
+        "image": "👨‍💼",
+        "text": "Roberto es un ingeniero iOS excepcional que consistentemente entrega trabajo de alta calidad. Su experiencia en SwiftUI y GraphQL ayudó a modernizar toda nuestra arquitectura móvil."
+      },
+      {
+        "name": "Sarah Johnson",
+        "position": "Diseñadora de Producto Senior",
+        "company": "Wells Fargo",
+        "image": "👩‍💻",
+        "text": "Trabajar con Roberto fue un placer. Su atención a la accesibilidad y experiencia de usuario hizo que nuestra aplicación bancaria fuera mucho más inclusiva para todos los usuarios."
+      },
+      {
+        "name": "Carlos Mendez",
+        "position": "Líder Técnico",
+        "company": "Eninetworks",
+        "image": "👨‍💻",
+        "text": "El liderazgo y habilidades técnicas de Roberto fueron instrumentales para entregar múltiples proyectos exitosos. Es un mentor natural y un excelente solucionador de problemas."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones. ¡No dudes en contactarme!",
+    "buttonText": "Agendar una Reunión",
+    "buttonSubtext": "Reserva un horario que funcione para ti",
+    "footer": "¡Espero saber de ti pronto!",
+    "labels": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    }
+  },
+  "navigation": {
+    "about": "Acerca",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "achievements": "Logros",
+    "languages": "Idiomas",
+    "testimonials": "Recomendaciones",
+    "contact": "Contacto"
+  },
+  "buttons": {
+    "downloadResume": "Descargar CV",
+    "getInTouch": "Contáctame"
+  }
+}
