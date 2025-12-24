@@ -50,7 +50,7 @@ export function Navigation() {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-400 transition-all"
           >
-            Portfolio
+            Mi portafolio Web
           </button>
 
           {/* Desktop Navigation */}
