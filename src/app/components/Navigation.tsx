@@ -46,12 +46,19 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <button
-            onClick={() => scrollToSection('hero')}
-            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-400 transition-all"
-          >
+        <button
+          onClick={() => scrollToSection('hero')}
+          className="flex items-center gap-3 group"
+        >
+          <img
+            src="/apple-touch-icon.png"
+            alt="Roberto Abad Logo"
+            className="h-12 w-12 object-contain rounded-full border border-white/80 transition-transform duration-300 group-hover:scale-105"
+          />
+          <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:to-purple-400 transition-all">
             Mi portafolio Web
-          </button>
+          </span>
+        </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
