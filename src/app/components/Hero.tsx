@@ -45,12 +45,34 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shadow-2xl shadow-blue-500/50"
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            transition={{ type: "spring", stiffness: 300 }}
+         <motion.div
+            className="
+              w-32 h-32
+              md:w-40 md:h-40
+              lg:w-48 lg:h-48
+              mx-auto mb-6
+              rounded-full
+              overflow-hidden
+              bg-gradient-to-br from-blue-500 to-purple-600
+              flex items-center justify-center
+              shadow-2xl shadow-blue-500/50
+            "
+            whileHover={{ scale: 1.08 }}
           >
-            <span className="text-white text-5xl">{data.personalInfo.avatar}</span>
+
+
+          {data.personalInfo.avatar.startsWith("/") ? (
+            <img
+              src={data.personalInfo.avatar}
+              alt={data.personalInfo.name}
+              className="w-full h-full object-cover rounded-full"
+            />
+          ) : (
+            <span className="text-white text-5xl">
+              {data.personalInfo.avatar}
+            </span>
+          )}
+
           </motion.div>
           
           <motion.h1
