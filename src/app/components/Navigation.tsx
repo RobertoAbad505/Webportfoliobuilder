@@ -61,23 +61,51 @@ export function Navigation() {
         </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 ">
+            {/* OPCIONES DE NAVEGACION */}
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
+                className="text-gray-300 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition-colors text-sm bg-clip-text hover:text-transparent"
               >
                 {item.label}
               </button>
             ))}
+
+            {/* LANGUAJE BUTTON */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 text-gray-300 hover:text-blue-400 transition-all border border-gray-700"
+              className="
+                relative group
+                p-[1px] rounded-lg
+                bg-gradient-to-r from-blue-400 to-purple-500
+                hover:shadow-lg hover:shadow-purple-500/30
+                transition-all
+              "
             >
-              <Globe size={18} />
-              <span className="text-sm font-medium">{language.toUpperCase()}</span>
+              <div
+                className="
+                  flex items-center gap-2 px-3 py-2 rounded-lg
+                  bg-gray-800/70
+                  group-hover:bg-gray-900/80
+                  transition-all
+                "
+              >
+                <span
+                  className="
+                    text-sm font-medium
+                    text-gray-300
+                    group-hover: bg-gradient-to-r from-blue-400 to-purple-500
+                    bg-clip-text
+                  "
+                >
+                  {language == "en" ? "🇺🇸 ":"🇲🇽 "}
+                  {language.toUpperCase()}
+                </span>
+              </div>
             </button>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,11 +114,20 @@ export function Navigation() {
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 text-gray-300 hover:text-blue-400 transition-all border border-gray-700"
             >
-              <Globe size={16} />
-              <span className="text-sm font-medium">{language.toUpperCase()}</span>
+              <span
+                  className="
+                    text-sm font-medium
+                    text-gray-300
+                    group-hover: bg-gradient-to-r from-blue-400 to-purple-500
+                    bg-clip-text
+                  "
+                >
+                  {language == "en" ? "🇺🇸 ":"🇲🇽 "}
+                  {language.toUpperCase()}
+                </span>
             </button>
             <button
-              className="text-gray-300"
+              className="text-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

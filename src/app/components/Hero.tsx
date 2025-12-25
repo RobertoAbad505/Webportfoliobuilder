@@ -4,6 +4,8 @@ import { AnimatedBackground } from "./AnimatedBackground";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { ArrowDownRight } from "lucide-react";
+
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -116,22 +118,38 @@ export function Hero() {
           <Button
             onClick={handleDownloadResume}
             size="lg"
-            className="gap-2 bg-blue-600 hover:bg-blue-700"
+            className="
+              group flex items-center gap-2
+              bg-blue-600 hover:bg-blue-700
+              transition-all
+            "
           >
-            <Download size={20} />
+            <Download
+              size={20}
+              className="transition-transform group-hover:translate-y-0.5"
+            />
             {data.buttons.downloadResume}
           </Button>
           <Button
             onClick={() =>
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" })
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
             }
             variant="outline"
             size="lg"
-            className="border-gray-600 text-black-300 hover:bg-gray-800"
+            className="
+              group flex items-center gap-2
+              border-gray-600
+              text-black-300
+              hover:bg-gray-800
+              hover:text-white
+              transition-all
+            "
           >
-            {data.buttons.getInTouch}
+            <span>{data.buttons.getInTouch}</span>
+            <ArrowDownRight
+              size={18}
+              className="transition-transform group-hover:translate-x-1 group-hover:translate-y-1"
+            />
           </Button>
         </motion.div>
 
@@ -141,36 +159,83 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
+          {/* GitHub */}
           <motion.a
             href={data.socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors"
+            className="
+              relative
+              text-pink-400
+              transition-all
+              after:absolute after:-inset-2
+              after:rounded-full
+              after:bg-gradient-to-r after:from-blue-400 after:to-purple-500
+              after:blur-2xl
+              after:opacity-0
+              hover:after:opacity-70
+            "
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <Github size={28} />
           </motion.a>
+
+          {/* LinkedIn */}
           <motion.a
             href={data.socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors"
+            className="
+              relative
+              text-blue-400
+              transition-all
+              after:absolute after:-inset-2
+              after:rounded-full
+              after:bg-gradient-to-r after:from-blue-400 after:to-purple-500
+              after:blur-2xl
+              after:opacity-0
+              hover:after:opacity-70
+            "
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <Linkedin size={28} />
           </motion.a>
+
+          {/* Email */}
           <motion.a
             href={`mailto:${data.personalInfo.email}`}
-            className="text-gray-400 hover:text-blue-400 transition-colors"
+            className="
+              relative
+              text-yellow-400
+              transition-all
+              after:absolute after:-inset-2
+              after:rounded-full
+              after:bg-gradient-to-r after:from-blue-400 after:to-purple-500
+              after:blur-2xl
+              after:opacity-0
+              hover:after:opacity-70
+            "
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <Mail size={28} />
           </motion.a>
+
+          {/* WhatsApp */}
           <motion.a
             href={data.socialLinks.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-green-400 transition-colors"
+            className="
+              relative
+              text-green-400
+              transition-all
+              after:absolute after:-inset-2
+              after:rounded-full
+              after:bg-gradient-to-r after:from-blue-400 after:to-purple-500
+              after:blur-2xl
+              after:opacity-0
+              hover:after:opacity-70
+            "
             whileHover={{ scale: 1.2, y: -5 }}
           >
             <MessageSquare size={28} />
