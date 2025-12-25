@@ -8,6 +8,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
   const { data } = useLanguage();
+  const gradientText = "bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,7 +83,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className={gradientText}>
               {data.personalInfo.name.split(' ')[0]} {data.personalInfo.name.split(' ')[1]}
             </span>
           </motion.h1>
@@ -128,7 +129,7 @@ export function Hero() {
             }
             variant="outline"
             size="lg"
-            className="border-gray-600 text-gray-300 hover:bg-gray-800"
+            className="border-gray-600 text-black-300 hover:bg-gray-800"
           >
             {data.buttons.getInTouch}
           </Button>

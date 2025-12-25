@@ -169,12 +169,12 @@
     "title": "Idiomas",
     "items": [
       {
-        "language": "Español",
+        "language": "Español 🇲🇽",
         "level": "Nativo",
         "proficiency": 100
       },
       {
-        "language": "Inglés",
+        "language": "Inglés 🇺🇸",
         "level": "C2 - Competente",
         "proficiency": 95
       }
