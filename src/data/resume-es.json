@@ -19,24 +19,33 @@
   "about": {
     "title": "Sobre Mí",
     "paragraphs": [
-      "Soy un Ingeniero iOS Senior con más de 7 años de experiencia profesional entregando soluciones móviles escalables en aplicaciones bancarias, empresariales y de consumo.",
-      "Me especializo en Swift, SwiftUI, GraphQL y desarrollo con enfoque en accesibilidad, con un sólido historial modernizando bases de código legacy y mentoreando equipos de desarrollo."
+      "Soy Ingeniero de Software Senior con más de 7 años de experiencia construyendo productos digitales de alto impacto para aplicaciones bancarias, empresariales y de consumo, trabajando en entornos exigentes tanto en México como en Silicon Valley.",
+      "A lo largo de mi carrera he desarrollado soluciones end-to-end en el ecosistema Apple y web, participando en el diseño de arquitectura, implementación de interfaces robustas, integración de servicios backend y optimización de rendimiento y calidad en bases de código a gran escala.",
+      "Me caracterizo por adaptarme rápidamente a distintos stacks y dominios de negocio, con experiencia en desarrollo móvil, frontend, consumo de APIs, GraphQL, accesibilidad, pruebas, CI/CD y colaboración estrecha con diseño, producto y stakeholders técnicos."
     ],
     "highlights": [
       {
-        "title": "Arquitectura Móvil",
-        "description": "Experiencia en SwiftUI, UIKit, Combine, MVVM-C y arquitectura iOS a escala empresarial"
+        "title": "Ingeniería de Producto",
+        "description": "Experiencia construyendo aplicaciones escalables con enfoque en calidad, mantenibilidad y experiencia de usuario en entornos de alto tráfico y regulación.",
+        "icon": "package"
       },
       {
-        "title": "Accesibilidad",
-        "description": "Entregué interfaces inclusivas y conformes que soportan VoiceOver, Dynamic Type y teclados externos"
+        "title": "Accesibilidad & UX",
+        "description": "Implementación de interfaces inclusivas compatibles con VoiceOver, Dynamic Type, teclados externos y estándares de accesibilidad a nivel empresarial.",
+        "icon": "accessibility"
       },
       {
-        "title": "Liderazgo",
-        "description": "Mentoreé ingenieros, lideré migraciones y colaboré de forma multifuncional en equipos Ágiles"
+        "title": "Arquitectura & Escalabilidad",
+        "description": "Participación activa en diseño de arquitectura, modernización de código legacy, adopción de nuevas tecnologías y toma de decisiones técnicas a largo plazo.",
+        "icon": "git-branch"
+      },
+      {
+        "title": "Colaboración & Liderazgo Técnico",
+        "description": "Mentoría a ingenieros, liderazgo técnico en iniciativas clave y trabajo multifuncional en equipos Ágiles y distribuidos.",
+        "icon": "users"
       }
     ]
-  },
+  },  
   "skills": {
     "title": "Habilidades y Tecnologías",
     "categories": {

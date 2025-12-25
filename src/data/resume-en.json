@@ -19,24 +19,33 @@
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I am a Senior iOS Engineer with over 7 years of professional experience delivering scalable mobile solutions across banking, enterprise, and consumer applications.",
-      "I specialize in Swift, SwiftUI, GraphQL, and accessibility-first development, with a strong track record modernizing legacy codebases and mentoring development teams."
+      "I am a Senior Software Engineer with over 7 years of experience building high-impact digital products for banking, enterprise, and consumer applications, working in demanding environments across Mexico and Silicon Valley.",
+      "Throughout my career, I have delivered end-to-end solutions across the Apple ecosystem and the web, contributing to architecture design, robust UI implementation, backend service integration, and performance and quality optimization in large-scale codebases.",
+      "I am known for quickly adapting to different technology stacks and business domains, with hands-on experience in mobile development, frontend engineering, API consumption, GraphQL, accessibility, testing, CI/CD, and close collaboration with design, product, and technical stakeholders."
     ],
     "highlights": [
       {
-        "title": "Mobile Architecture",
-        "description": "Expertise in SwiftUI, UIKit, Combine, MVVM-C, and enterprise-scale iOS architecture"
+        "title": "Product Engineering",
+        "description": "Experience building scalable applications with a strong focus on quality, maintainability, and user experience in high-traffic and regulated environments.",
+        "icon": "package"
       },
       {
-        "title": "Accessibility",
-        "description": "Delivered inclusive and compliant UIs supporting VoiceOver, Dynamic Type, and external keyboards"
+        "title": "Accessibility & UX",
+        "description": "Delivered inclusive interfaces supporting VoiceOver, Dynamic Type, external keyboards, and enterprise-level accessibility standards.",
+        "icon": "accessibility"
       },
       {
-        "title": "Leadership",
-        "description": "Mentored engineers, led migrations, and collaborated cross-functionally in Agile teams"
+        "title": "Architecture & Scalability",
+        "description": "Active involvement in architecture design, legacy code modernization, technology adoption, and long-term technical decision-making.",
+        "icon": "git-branch"
+      },
+      {
+        "title": "Collaboration & Technical Leadership",
+        "description": "Provided mentorship to engineers, led key technical initiatives, and collaborated cross-functionally within Agile and distributed teams.",
+        "icon": "users"
       }
     ]
-  },
+  },  
   "skills": {
     "title": "Skills & Technologies",
     "categories": {

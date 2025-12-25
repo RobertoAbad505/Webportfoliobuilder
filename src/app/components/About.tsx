@@ -1,16 +1,15 @@
-import { Code2, Rocket, Users } from 'lucide-react';
+import { Code2, Rocket, Users, Package, Accessibility, GitBranch } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { motion } from 'motion/react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
-const iconMap: { [key: string]: typeof Code2 } = {
-  'Mobile Architecture': Code2,
-  'Arquitectura Móvil': Code2,
-  'Accessibility': Rocket,
-  'Accesibilidad': Rocket,
-  'Leadership': Users,
-  'Liderazgo': Users,
+const iconMap = {
+  package: Package,
+  accessibility: Accessibility,
+  "git-branch": GitBranch,
+  users: Users,
 };
+
 
 export function About() {
   const { data } = useLanguage();
@@ -29,9 +28,10 @@ export function About() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {data.about.highlights.map((item, index) => {
-            const Icon = iconMap[item.title] || Code2;
+            const Icon = iconMap[item.icon] || Code2;
+
             return (
               <motion.div
                 key={index}
@@ -39,8 +39,9 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="w-full"
               >
-                <Card className="bg-gray-900/50 backdrop-blur-lg border-gray-800 hover:shadow-lg hover:shadow-blue-500/10 transition-all">
+                <Card className="w-full max-w-sm bg-gray-900/50 backdrop-blur-lg border-gray-800 hover:shadow-lg hover:shadow-blue-500/10 transition-all">
                   <CardContent className="pt-6 text-center">
                     <motion.div
                       className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm flex items-center justify-center"
@@ -49,6 +50,7 @@ export function About() {
                     >
                       <Icon size={32} className="text-blue-400" />
                     </motion.div>
+
                     <h3 className="text-xl mb-2 text-white">{item.title}</h3>
                     <p className="text-gray-400">{item.description}</p>
                   </CardContent>
