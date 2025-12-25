@@ -84,7 +84,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hi, I'm{" "}
+            {data.personalInfo.salutMessage}{" "}
             <span className={gradientText}>
               {data.personalInfo.name.split(' ')[0]} {data.personalInfo.name.split(' ')[1]}
             </span>

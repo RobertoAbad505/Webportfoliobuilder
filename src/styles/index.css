@@ -1,3 +1,9 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+html,
+body {
+  background-color: #030712; /* gray-950 de Tailwind */
+  overscroll-behavior: none;
+}

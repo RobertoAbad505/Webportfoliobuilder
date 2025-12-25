@@ -1,5 +1,6 @@
 {
   "personalInfo": {
+    "salutMessage": "Hola! yo soy ",
     "name": "Roberto Abad Ramirez Nieves",
     "title": "Ingeniero iOS Senior",
     "description": "Ingeniero iOS Senior con más de 7 años de experiencia construyendo aplicaciones móviles escalables, accesibles y de alto rendimiento. Lideré el desarrollo de funcionalidades para la aplicación iOS de Wells Fargo que sirve a millones de usuarios, con profunda experiencia en SwiftUI, GraphQL y arquitectura moderna de iOS.",
