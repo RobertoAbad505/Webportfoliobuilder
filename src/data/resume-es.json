@@ -49,10 +49,46 @@
   "skills": {
     "title": "Habilidades y Tecnologías",
     "categories": {
-      "Frontend": ["SwiftUI", "UIKit", "Combine", "HTML", "CSS", "JavaScript"],
-      "Backend": ["GraphQL", "REST APIs", "Django", "Java Spring"],
-      "Base de Datos": ["SQL Server", "PostgreSQL", "MySQL"],
-      "Herramientas": ["Xcode", "Apollo GraphQL", "Git", "CI/CD", "Figma", "Agile/Scrum"]
+      "Mobile": [
+        { "name": "Swift", "icon": "swift" },
+        { "name": "SwiftUI", "icon": "swiftui" },
+        { "name": "UIKit", "icon": "uikit" },
+        { "name": "Combine", "icon": "combine" },
+        { "name": "Accessibility (VoiceOver, Dynamic Type)", "icon": "accessibility" }
+      ],
+      "Web Frontend": [
+        { "name": "HTML5", "icon": "html" },
+        { "name": "CSS3 / Tailwind CSS", "icon": "css" },
+        { "name": "JavaScript / TypeScript", "icon": "javascript" },
+        { "name": "React", "icon": "react" },
+        { "name": "Vite", "icon": "vite" }
+      ],
+      "Backend & APIs": [
+        { "name": "REST APIs", "icon": "api" },
+        { "name": "GraphQL", "icon": "graphql" },
+        { "name": "Apollo GraphQL", "icon": "apollo" },
+        { "name": "Django", "icon": "django" },
+        { "name": ".NET / C#", "icon": "dotnet" },
+        { "name": "Java Spring", "icon": "spring" }
+      ],
+      "Databases (Bases de datos)": [
+        { "name": "SQL Server", "icon": "sqlserver" },
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Stored Procedures", "icon": "database" }
+      ],
+      "Cloud & Infrastructure": [
+        { "name": "IIS Server Administration", "icon": "server" },
+        { "name": "CI/CD Pipelines", "icon": "cicd" },
+        { "name": "Firebase Hosting", "icon": "firebase" }
+      ],
+      "Engineering Practices": [
+        { "name": "Git & Version Control", "icon": "git" },
+        { "name": "Agile / Scrum", "icon": "agile" },
+        { "name": "Clean Architecture", "icon": "architecture" },
+        { "name": "Legacy Modernization", "icon": "refactor" },
+        { "name": "Performance Optimization", "icon": "performance" }
+      ]
     }
   },
   "experience": {
