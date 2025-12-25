@@ -1,4 +1,4 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { motion } from 'motion/react';
 import { useLanguage } from '../../contexts/LanguageContext';
@@ -34,6 +34,7 @@ export function Experience() {
                         <Calendar size={18} />
                         <span>{exp.period}</span>
                         <span>•</span>
+                        <MapPin size={16} />
                         <span>{exp.location}</span>
                       </div>
                     </div>

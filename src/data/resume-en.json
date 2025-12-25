@@ -92,14 +92,20 @@
     "title": "Education",
     "degrees": [
       {
-        "degree": "Bachelor's Degree in Computer Engineering",
-        "institution": "Universidad Autónoma de Querétaro",
-        "location": "Querétaro, México",
+        "degree": "Bachelor’s Degree in Computer Engineering",
+        "institution": "Autonomous University of Querétaro – School of Computer Science",
+        "location": "Querétaro, Mexico",
         "period": "Graduated Jul 2019",
-        "description": "Focus on software engineering and systems development",
+        "description": "4.5-year engineering program focused on the design and development of software and computer systems, with strong foundations in embedded systems engineering, software development methodologies, problem analysis, and efficient technological solutions. Trained to design, implement, and deploy computing solutions within organizations, while collaborating in multidisciplinary teams and demonstrating technical leadership.",
+        "details": [
+          "Comprehensive training in software design and development, including embedded software and hardware–software interaction.",
+          "Development of efficient computing solutions using modern methodologies and engineering principles.",
+          "Strong problem-solving, critical thinking, and ability to work collaboratively and lead technical projects.",
+          "Emphasis on solid theoretical foundations, practical engineering skills, and ethical responsibility in professional practice."
+        ],
         "gpa": ""
       }
-    ],
+    ],  
     "coursesTitle": "Courses & Certifications",
     "courses": [
       {

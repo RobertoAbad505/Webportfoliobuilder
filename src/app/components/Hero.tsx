@@ -49,34 +49,39 @@ export function Hero() {
           transition={{ duration: 0.8 }}
         >
          <motion.div
+          className="
+            relative
+            mx-auto mb-6
+            w-36 h-36
+            md:w-44 md:h-44
+            lg:w-52 lg:h-52
+            rounded-full
+            bg-gradient-to-r from-blue-400 to-purple-500
+            flex items-center justify-center
+            shadow-2xl shadow-purple-500/40
+          "
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 260 }}
+        >
+          <div
             className="
-              w-32 h-32
-              md:w-40 md:h-40
-              lg:w-48 lg:h-48
-              mx-auto mb-6
+              w-[calc(100%-6px)]
+              h-[calc(100%-6px)]
               rounded-full
+              bg-gray-950
               overflow-hidden
-              bg-gradient-to-br from-blue-500 to-purple-600
               flex items-center justify-center
-              shadow-2xl shadow-blue-500/50
             "
-            whileHover={{ scale: 1.08 }}
           >
-
-
-          {data.personalInfo.avatar.startsWith("/") ? (
             <img
               src={data.personalInfo.avatar}
               alt={data.personalInfo.name}
-              className="w-full h-full object-cover rounded-full"
+              className="w-full h-full object-cover"
             />
-          ) : (
-            <span className="text-white text-5xl">
-              {data.personalInfo.avatar}
-            </span>
-          )}
+          </div>
+        </motion.div>
 
-          </motion.div>
+
           
           <motion.h1
             className="text-5xl md:text-6xl lg:text-7xl mb-4 text-white"

@@ -92,11 +92,17 @@
     "title": "Educación",
     "degrees": [
       {
-        "degree": "Licenciatura en Ingeniería en Computación",
-        "institution": "Universidad Autónoma de Querétaro",
+        "degree": "Ingeniería en Computación",
+        "institution": "Universidad Autónoma de Querétaro – Facultad de Informática",
         "location": "Querétaro, México",
         "period": "Graduado Jul 2019",
-        "description": "Enfoque en ingeniería de software y desarrollo de sistemas",
+        "description": "Programa de 4.5 años enfocado en el diseño y desarrollo de software y sistemas computacionales, con formación en ingeniería de sistemas embebidos, metodologías de desarrollo, análisis de problemas y soluciones tecnológicas eficientes. Capacidad para generar nuevas tecnologías e implementar soluciones de cómputo en organizaciones, así como trabajar en equipos multidisciplinarios y ejercer liderazgo técnico.",
+        "details": [
+          "Formación integral en diseño y desarrollo de software, incluyendo software embebido e interacción entre hardware y software.",
+          "Desarrollo de soluciones eficientes que integran metodologías modernas y principios de ingeniería de cómputo.",
+          "Habilidades para trabajar en equipos y liderar proyectos, así como pensamiento crítico y resolución de problemas complejos.",
+          "Énfasis en bases teóricas, prácticas de ingeniería y responsabilidad ética en el desempeño profesional."
+        ],
         "gpa": ""
       }
     ],
@@ -121,7 +127,7 @@
         "credential": ""
       }
     ]
-  },
+  },  
   "projects": {
     "title": "Proyectos Destacados",
     "items": [
@@ -176,7 +182,7 @@
       },
       {
         "language": "Inglés 🇺🇸",
-        "level": "C2 - Competente",
+        "level": "C2 - Proficient",
         "proficiency": 95
       }
     ]
