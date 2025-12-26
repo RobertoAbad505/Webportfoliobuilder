@@ -2,6 +2,7 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { motion } from 'motion/react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { TechIcon } from './TechIcon';
 
 export function Experience() {
   const { data } = useLanguage();
@@ -34,7 +35,7 @@ export function Experience() {
                         <Calendar size={18} />
                         <span>{exp.period}</span>
                         <span>•</span>
-                        <MapPin size={16} />
+                        <MapPin size={20} />
                         <span>{exp.location}</span>
                       </div>
                     </div>
@@ -53,9 +54,22 @@ export function Experience() {
                     {exp.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-full text-sm border border-blue-500/20"
+                        className="
+                          flex items-center gap-2
+                          px-3 py-1
+                          bg-blue-500/10
+                          text-blue-300
+                          rounded-full
+                          text-sm
+                          border border-blue-500/20
+                        "
                       >
-                        {tech}
+                        <TechIcon
+                          name={tech}
+                          size={16}
+                          className="text-blue-400"
+                        />
+                        <span>{tech}</span>
                       </span>
                     ))}
                   </div>

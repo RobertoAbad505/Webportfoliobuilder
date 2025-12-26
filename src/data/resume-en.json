@@ -2,8 +2,8 @@
   "personalInfo": {
     "salutMessage": "Hi, I'm ",
     "name": "Roberto Abad Ramirez Nieves",
-    "title": "Senior iOS Engineer",
-    "description": "Senior iOS Engineer with 7+ years of experience building scalable, accessible, and high-performance mobile applications. Led feature development for the Wells Fargo iOS app serving millions of users, with deep expertise in SwiftUI, GraphQL, and modern iOS architecture.",
+    "title": "Senior Software Engineer",
+    "description": "Senior Software Engineer with 7+ years of experience building scalable, high-impact digital products across mobile and web platforms. Strong background in iOS, modern frontend architectures, API integration, and enterprise-grade applications used by millions of users.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
     "phone": "+52 442 333 0132",
@@ -19,29 +19,29 @@
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I am a Senior Software Engineer with over 7 years of experience building high-impact digital products for banking, enterprise, and consumer applications, working in demanding environments across Mexico and Silicon Valley.",
-      "Throughout my career, I have delivered end-to-end solutions across the Apple ecosystem and the web, contributing to architecture design, robust UI implementation, backend service integration, and performance and quality optimization in large-scale codebases.",
-      "I am known for quickly adapting to different technology stacks and business domains, with hands-on experience in mobile development, frontend engineering, API consumption, GraphQL, accessibility, testing, CI/CD, and close collaboration with design, product, and technical stakeholders."
+      "I am a software engineer focused on building reliable, scalable, and well-crafted digital products in complex and high-impact environments, including banking, enterprise platforms, and consumer-facing applications.",
+      "My experience spans across native iOS development, modern frontend technologies, and backend service integration, allowing me to contribute beyond feature delivery — from architecture discussions and system design to performance, accessibility, and long-term maintainability.",
+      "I thrive in collaborative environments where technology, product, and design intersect, and I am known for adapting quickly to new stacks and domains while maintaining a strong engineering mindset focused on quality, clarity, and user value."
     ],
     "highlights": [
       {
         "title": "Product Engineering",
-        "description": "Experience building scalable applications with a strong focus on quality, maintainability, and user experience in high-traffic and regulated environments.",
+        "description": "Building scalable and maintainable applications with a strong focus on code quality, system reliability, and real-world user needs.",
         "icon": "package"
       },
       {
         "title": "Accessibility & UX",
-        "description": "Delivered inclusive interfaces supporting VoiceOver, Dynamic Type, external keyboards, and enterprise-level accessibility standards.",
+        "description": "Designing and delivering inclusive interfaces that meet accessibility standards while preserving usability and visual quality.",
         "icon": "accessibility"
       },
       {
         "title": "Architecture & Scalability",
-        "description": "Active involvement in architecture design, legacy code modernization, technology adoption, and long-term technical decision-making.",
+        "description": "Contributing to architectural decisions, legacy modernization efforts, and technical strategies that support long-term growth.",
         "icon": "git-branch"
       },
       {
         "title": "Collaboration & Technical Leadership",
-        "description": "Provided mentorship to engineers, led key technical initiatives, and collaborated cross-functionally within Agile and distributed teams.",
+        "description": "Mentoring engineers, driving technical initiatives, and collaborating closely with cross-functional and distributed teams.",
         "icon": "users"
       }
     ]
@@ -75,19 +75,21 @@
         { "name": "SQL Server", "icon": "sqlserver" },
         { "name": "PostgreSQL", "icon": "postgresql" },
         { "name": "MySQL", "icon": "mysql" },
-        { "name": "Stored Procedures", "icon": "database" }
+        { "name": "Stored Procedures", "icon": "sqlserver" }
       ],
       "Cloud & Infrastructure": [
         { "name": "IIS Server Administration", "icon": "server" },
         { "name": "CI/CD Pipelines", "icon": "cicd" },
-        { "name": "Firebase Hosting", "icon": "firebase" }
+        { "name": "Firebase Hosting", "icon": "firebase" },
+        { "name": "Jenkins CI/CD", "icon": "jenkins" }
       ],
       "Engineering Practices": [
         { "name": "Git & Version Control", "icon": "git" },
         { "name": "Agile / Scrum", "icon": "agile" },
         { "name": "Clean Architecture", "icon": "architecture" },
         { "name": "Legacy Modernization", "icon": "refactor" },
-        { "name": "Performance Optimization", "icon": "performance" }
+        { "name": "Performance Optimization", "icon": "performance" },
+        { "name": "Multi-Threading", "icon": "multithread" }
       ]
     }
   },

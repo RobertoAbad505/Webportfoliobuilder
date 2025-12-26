@@ -1,9 +1,9 @@
 {
   "personalInfo": {
-    "salutMessage": "Hola! yo soy ",
+    "salutMessage": "Hola!, yo soy ",
     "name": "Roberto Abad Ramirez Nieves",
-    "title": "Ingeniero iOS Senior",
-    "description": "Ingeniero iOS Senior con más de 7 años de experiencia construyendo aplicaciones móviles escalables, accesibles y de alto rendimiento. Lideré el desarrollo de funcionalidades para la aplicación iOS de Wells Fargo que sirve a millones de usuarios, con profunda experiencia en SwiftUI, GraphQL y arquitectura moderna de iOS.",
+    "title": "Senior Software Engineer",
+    "description": "Ingeniero de Software Senior con más de 7 años de experiencia construyendo productos digitales escalables y de alto impacto en plataformas móviles y web. Sólida trayectoria en iOS, arquitecturas frontend modernas, integración de APIs y desarrollo de aplicaciones empresariales utilizadas por millones de usuarios.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
     "phone": "+52 442 333 0132",
@@ -19,29 +19,29 @@
   "about": {
     "title": "Sobre Mí",
     "paragraphs": [
-      "Soy Ingeniero de Software Senior con más de 7 años de experiencia construyendo productos digitales de alto impacto para aplicaciones bancarias, empresariales y de consumo, trabajando en entornos exigentes tanto en México como en Silicon Valley.",
-      "A lo largo de mi carrera he desarrollado soluciones end-to-end en el ecosistema Apple y web, participando en el diseño de arquitectura, implementación de interfaces robustas, integración de servicios backend y optimización de rendimiento y calidad en bases de código a gran escala.",
-      "Me caracterizo por adaptarme rápidamente a distintos stacks y dominios de negocio, con experiencia en desarrollo móvil, frontend, consumo de APIs, GraphQL, accesibilidad, pruebas, CI/CD y colaboración estrecha con diseño, producto y stakeholders técnicos."
+      "Soy un ingeniero de software enfocado en construir productos digitales confiables, escalables y bien diseñados, trabajando en entornos complejos y de alto impacto como banca, plataformas empresariales y aplicaciones de consumo.",
+      "Mi experiencia abarca desarrollo nativo iOS, tecnologías frontend modernas e integración de servicios backend, lo que me permite contribuir más allá de la implementación de funcionalidades, participando en decisiones de arquitectura, diseño de sistemas, rendimiento, accesibilidad y mantenibilidad a largo plazo.",
+      "Me desenvuelvo especialmente bien en entornos colaborativos donde convergen tecnología, producto y diseño, destacando por mi capacidad de adaptación a distintos stacks y dominios, manteniendo siempre un enfoque sólido en calidad, claridad técnica y valor para el usuario."
     ],
     "highlights": [
       {
         "title": "Ingeniería de Producto",
-        "description": "Experiencia construyendo aplicaciones escalables con enfoque en calidad, mantenibilidad y experiencia de usuario en entornos de alto tráfico y regulación.",
+        "description": "Construcción de aplicaciones escalables y mantenibles con fuerte enfoque en calidad, confiabilidad del sistema y necesidades reales de los usuarios.",
         "icon": "package"
       },
       {
         "title": "Accesibilidad & UX",
-        "description": "Implementación de interfaces inclusivas compatibles con VoiceOver, Dynamic Type, teclados externos y estándares de accesibilidad a nivel empresarial.",
+        "description": "Diseño e implementación de interfaces inclusivas que cumplen estándares de accesibilidad sin sacrificar usabilidad ni calidad visual.",
         "icon": "accessibility"
       },
       {
         "title": "Arquitectura & Escalabilidad",
-        "description": "Participación activa en diseño de arquitectura, modernización de código legacy, adopción de nuevas tecnologías y toma de decisiones técnicas a largo plazo.",
+        "description": "Participación activa en decisiones de arquitectura, modernización de código legacy y definición de estrategias técnicas a largo plazo.",
         "icon": "git-branch"
       },
       {
         "title": "Colaboración & Liderazgo Técnico",
-        "description": "Mentoría a ingenieros, liderazgo técnico en iniciativas clave y trabajo multifuncional en equipos Ágiles y distribuidos.",
+        "description": "Mentoría a ingenieros, liderazgo de iniciativas técnicas y colaboración estrecha con equipos multidisciplinarios y distribuidos.",
         "icon": "users"
       }
     ]

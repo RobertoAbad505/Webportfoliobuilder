@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { TechIcon } from './TechIcon';
 
 export function Projects() {
   const { data } = useLanguage();
@@ -52,17 +53,26 @@ export function Projects() {
                 </CardHeader>
 
                 <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-gray-800/50 text-gray-300 rounded-full text-xs border border-gray-700/50"
+                        className="flex items-center gap-2
+                        px-3 py-1
+                        bg-blue-500/10
+                        text-blue-300
+                        rounded-full
+                        text-sm
+                        border border-blue-500/20"
                       >
+                      <TechIcon
+                      name={tech}
+                      className="w-4 h-4 text-blue-400 flex-shrink-0"/>
                         {tech}
                       </span>
                     ))}
                   </div>
-                  
+                  &nbsp;
                   <div className="flex gap-3">
                     {project.github && (
                       <Button variant="outline" size="sm" asChild className="border-gray-700 text-gray-300 hover:bg-gray-800 flex-1">
