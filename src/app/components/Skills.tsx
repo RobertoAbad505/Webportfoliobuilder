@@ -5,7 +5,7 @@ import { TechIcon } from './TechIcon';
 export function Skills() {
   const { data } = useLanguage();
   return (
-    <section className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl text-center mb-4 text-white">{data.skills.title}</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-12"></div>

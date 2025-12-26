@@ -10,6 +10,7 @@ import { Education } from "./components/Education";
 import { Languages } from "./components/Languages";
 import { Testimonials } from "./components/Testimonials";
 import { LanguageProvider } from "../contexts/LanguageContext";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
@@ -18,26 +19,15 @@ export default function App() {
         <Navigation />
         <Hero />
         <About />
-        <Skills />
         <Experience />
         <Projects />
+        <Skills />
         <Achievements />
-        <Languages />
         <Testimonials />
         <Education />
+        <Languages />
         <Contact />
-        
-        <footer className="bg-black text-white py-8 border-t border-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-gray-400">
-              © {new Date().getFullYear()} Roberto Abad. All
-              rights reserved.
-            </p>
-            <p className="text-gray-500 text-sm mt-2">
-              Built with React, TypeScript, and Tailwind CSS
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </LanguageProvider>
   );

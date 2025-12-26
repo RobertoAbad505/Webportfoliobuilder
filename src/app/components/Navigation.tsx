@@ -32,12 +32,11 @@ export function Navigation() {
     { label: data.navigation.about, id: 'about' },
     { label: data.navigation.experience, id: 'experience' },
     { label: data.navigation.projects, id: 'projects' },
-    { label: data.navigation.achievements, id: 'achievements' },
-    { label: data.navigation.languages, id: 'languages' },
-    { label: data.navigation.testimonials, id: 'testimonials' },
+    { label: data.navigation.skills, id: 'skills' },
     { label: data.navigation.contact, id: 'contact' },
   ];
-
+  const itemCss = "text-gray-300 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition-colors text-sm bg-clip-text hover:text-transparent"
+  const contactCss = "text-gray-300 hover:text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 font-medium"
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -67,7 +66,7 @@ export function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-300 hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-500 transition-colors text-sm bg-clip-text hover:text-transparent"
+                className={item.id == "contact" ? contactCss:itemCss}
               >
                 {item.label}
               </button>

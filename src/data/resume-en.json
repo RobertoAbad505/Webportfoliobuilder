@@ -97,41 +97,147 @@
     "title": "Work Experience",
     "items": [
       {
-        "title": "Senior iOS Engineer",
-        "company": "Wells Fargo Bank (via Enhance IT)",
-        "period": "Sep 2022 - Jan 2025",
+        "title": "Senior iOS Engineer (Contract via Enhance IT)",
+        "company": "Wells Fargo Bank",
+        "period": "Sep 2022 – Jan 2025",
         "location": "San Francisco Bay Area, CA, USA",
         "description": [
-          "Led development of native features for the Wells Fargo iOS banking app serving millions of daily users",
-          "Migrated critical flows from legacy WebViews to Swift and SwiftUI, improving performance and UX",
-          "Introduced Apollo GraphQL CLI and modernized the network layer",
-          "Delivered accessible UIs meeting strict banking compliance standards",
-          "Collaborated with Android, QA, Backend, and Design teams in Agile Scrum environments"
+          "Collaborated onsite at Wells Fargo’s Silicon Valley hubs (Fremont / San Leandro) to lead development of native features for the Wells Fargo iOS banking app, impacting millions of daily users.",
+          "Led the migration of legacy WebView-based flows to fully native Swift and SwiftUI implementations, significantly improving performance, reliability, and user experience.",
+          "Pioneered the adoption of Apollo GraphQL CLI to modernize the API layer; first engineer on the team to implement GraphQL architecture in production.",
+          "Delivered inclusive and accessible user interfaces compliant with strict banking QA and accessibility standards (VoiceOver, Dynamic Type, external keyboard support).",
+          "Collaborated closely with Android, QA, Backend, and Design teams within Agile Scrum environments to deliver bi-weekly releases."
         ],
-        "technologies": ["Swift", "SwiftUI", "Combine", "Apollo GraphQL", "Accessibility"]
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "Combine",
+          "Apollo GraphQL",
+          "GraphQL",
+          "Accessibility",
+          "Agile/Scrum"
+        ]
       },
       {
-        "title": "iOS Developer Consultant",
+        "title": "iOS Developer Consultant (Bootcamp & Training)",
         "company": "Enhance IT",
-        "period": "Jun 2022 - Aug 2022",
+        "period": "Jun 2022 – Aug 2022",
         "location": "Atlanta, GA, USA",
         "description": [
-          "Completed an intensive iOS bootcamp focused on SwiftUI, Combine, and enterprise patterns",
-          "Trained in MVVM-C and VIPER architectures",
-          "Prepared for enterprise client deployment through mock banking applications"
+          "Completed an immersive, high-intensity iOS development bootcamp focused on advanced SwiftUI, Combine, and enterprise-grade architectural patterns.",
+          "Trained in modern iOS architectures including MVVM-C and VIPER through hands-on projects and technical evaluations.",
+          "Received specialized training in communication and soft skills for U.S. corporate environments.",
+          "Prepared for enterprise client deployment through mock projects simulating large-scale banking applications."
         ],
-        "technologies": ["SwiftUI", "Combine", "MVVM-C", "VIPER"]
+        "technologies": [
+          "SwiftUI",
+          "Combine",
+          "MVVM-C",
+          "VIPER"
+        ]
       },
       {
-        "title": "Development Coordinator / Full Stack Developer",
-        "company": "Eninetworks",
-        "period": "Jul 2019 - Jun 2022",
+        "title": "Full Stack Developer",
+        "company": "Dataware Solutions S.A. de C.V.",
+        "period": "Mar 2022 – May 2022",
         "location": "Querétaro, México",
         "description": [
-          "Oversaw end-to-end software projects and mentored junior developers",
-          "Led development of internal systems, databases, and server infrastructure"
+          "Developed a mobile application to manage warehouse inventory using QR code scanning and Bluetooth barcode scanner accessories, supporting hands-free operational workflows.",
+          "Designed and implemented backend services using .NET Core APIs integrated with SQL Server databases and stored procedures.",
+          "Built and maintained a native Android application integrating API services for real-time warehouse operations and reporting.",
+          "Designed SQL stored procedures for operational reporting and analytics."
         ],
-        "technologies": ["C#", ".NET", "SQL Server", "JavaScript"]
+        "technologies": [
+          "Android",
+          "Java",
+          ".NET Core",
+          "SQL Server",
+          "Stored Procedures",
+          "Bluetooth",
+          "REST APIs"
+        ]
+      },
+      {
+        "title": "IT Department Coordinator",
+        "company": "Eninetworks",
+        "period": "Aug 2021 – Jun 2022",
+        "location": "Querétaro, México",
+        "description": [
+          "Managed software projects throughout their full lifecycle, coordinating requirements, timelines, and deliverables.",
+          "Mentored and trained new developers, supporting onboarding and technical growth.",
+          "Standardized development practices and implemented quality assurance and testing protocols across projects."
+        ],
+        "technologies": [
+          "Project Management",
+          "Agile",
+          "Code Quality",
+          "Mentorship"
+        ]
+      },
+      {
+        "title": "Full Stack Developer",
+        "company": "Eninetworks",
+        "period": "Jul 2019 – Aug 2021",
+        "location": "Querétaro, México",
+        "description": [
+          "Developed administrative systems and communication tools for internal operations and customer-facing platforms.",
+          "Designed and maintained backend services and APIs using C#, .NET Core, and SQL-based databases.",
+          "Managed servers, databases, and networking components, including IIS administration and SSH-based workflows.",
+          "Coordinated technical tasks across team members and supported multiple concurrent projects."
+        ],
+        "technologies": [
+          "C#",
+          ".NET Core",
+          "IIS",
+          "SQL Server",
+          "PostgreSQL",
+          "APIs",
+          "SSH"
+        ]
+      },
+      {
+        "title": "Java / Spring Full Stack Developer",
+        "company": "Universidad Autónoma de Querétaro",
+        "period": "Feb 2018 – Sep 2018",
+        "location": "Querétaro, México",
+        "description": [
+          "Developed Java Spring web applications for university scholarship and staff management systems.",
+          "Implemented responsive UI solutions using HTML5, CSS, JSP, and JavaScript for mobile and desktop environments.",
+          "Maintained CI/CD workflows and deployment processes using GitLab and WildFly servers.",
+          "Mentored junior engineers and supported ongoing development efforts across multiple projects."
+        ],
+        "technologies": [
+          "Java",
+          "Spring",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PostgreSQL",
+          "WildFly",
+          "GitLab"
+        ]
+      },
+      {
+        "title": "Software Developer",
+        "company": "BinaryCode Systems S.A. de C.V.",
+        "period": "Jan 2017 – Sep 2017",
+        "location": "Querétaro, México",
+        "description": [
+          "Developed custom web and mobile applications for SMEs using .NET Framework and Xamarin for iOS and Android.",
+          "Built desktop applications for real-time production line tracking using barcode scanners, Zebra printers, and QR codes.",
+          "Implemented reporting, analytics, and data processing solutions for production environments.",
+          "Provided rapid-response support as a \"fireman\" developer, fixing bugs and improving existing iOS applications."
+        ],
+        "technologies": [
+          ".NET",
+          "C#",
+          "Xamarin",
+          "iOS",
+          "Swift",
+          "UIKit",
+          "WinForms",
+          "SQL Server"
+        ]
       }
     ]
   },
@@ -274,11 +380,9 @@
   },
   "navigation": {
     "about": "About",
+    "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
-    "achievements": "Achievements",
-    "languages": "Languages",
-    "testimonials": "Testimonials",
     "contact": "Contact"
   },
   "buttons": {
