@@ -285,28 +285,126 @@
     "title": "Featured Projects",
     "items": [
       {
-        "title": "Wells Fargo iOS App",
-        "description": "Delivered new native features for a large-scale banking application, led GraphQL migration, and improved accessibility coverage.",
-        "technologies": ["Swift", "SwiftUI", "GraphQL", "Accessibility"],
-        "github": "",
-        "live": "https://apps.apple.com/us/developer/wells-fargo/id311548712",
-        "image": "🏦"
+        "title": "Wells Fargo Mobile Banking App",
+        "subtitle": "iOS · Enterprise Banking",
+        "featured": true,
+        "description": "Contributed to the development of native iOS features for a large-scale banking application serving millions of users, with a strong focus on performance, accessibility, and security.",
+        "bullets": [
+          "Implemented new user-facing features and improvements in a highly regulated banking environment",
+          "Worked closely with backend, QA, Android, and design teams in Agile Scrum workflows",
+          "Delivered accessible and scalable solutions aligned with enterprise standards"
+        ],
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "GraphQL",
+          "Accessibility",
+          "CI/CD"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "🏦"
+        },
+        "links": {
+          "appStore": "https://apps.apple.com/us/developer/wells-fargo/id311548712"
+        }
+      },
+      {
+        "title": "Hand Tracking & Gesture Recognition",
+        "subtitle": "iOS · Vision · Interactive Experiences",
+        "featured": true,
+        "description": "Production-ready iOS feature capable of detecting hand gestures in real time, enabling interactive experiences such as gesture recognition and a rock–paper–scissors game.",
+        "bullets": [
+          "Implemented real-time hand pose detection using Apple Vision framework",
+          "Designed a gesture recognition system supporting custom gestures",
+          "Built an interactive rock–paper–scissors game using hand gestures",
+          "Optimized for performance and stability on real devices",
+          "Designed as a modular feature within an educational iOS app"
+        ],
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "Vision",
+          "Core ML",
+          "AVFoundation"
+        ],
+        "media": {
+          "type": "video",
+          "src": "/videos/projects/handTracking/demo.mp4",
+          "poster": "/images/projects/handTracking/poster.jpg"
+        },
+        "links": {
+          "caseStudy": "/projects/hand-tracking"
+        }
+      },      
+      {
+        "title": "CAPACITY",
+        "subtitle": "Enterprise Network Management Platform",
+        "featured": true,
+        "description": "Private multi-node IT platform designed to manage and monitor a network of over 50,000 users, built to meet strict enterprise scalability and security requirements.",
+        "bullets": [
+          "Developed internal tools and terminals to support operational efficiency and monitoring",
+          "Designed distributed system components for scalability and reliability",
+          "Implemented backend services and database logic for enterprise workflows"
+        ],
+        "technologies": [
+          "C#",
+          ".NET",
+          "SQL Server",
+          "APIs",
+          "Distributed Systems"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "🖥️"
+        },
+        "links": {}
+      },
+      {
+        "title": "NOC",
+        "subtitle": "Multi-Platform Operations & Reporting System",
+        "featured": false,
+        "description": "Private system for real-time customer support, operational reporting, and internal communication across multiple platforms.",
+        "bullets": [
+          "Designed and developed web, mobile, and REST API components",
+          "Integrated multiple systems and communication tools for operational workflows",
+          "Supported real-time reporting and monitoring for customer-facing operations"
+        ],
+        "technologies": [
+          "Ionic",
+          "REST APIs",
+          "Web Technologies",
+          "Mobile Development"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "📊"
+        },
+        "links": {}
       },
       {
         "title": "EniCam",
-        "description": "Mobile application for real-time camera monitoring on iOS and Android platforms.",
-        "technologies": ["Swift", "AVFoundation", "Streaming"],
-        "github": "",
-        "live": "https://apps.apple.com/mx/app/enicam/id1541710259",
-        "image": "📷"
-      },
-      {
-        "title": "EniTV",
-        "description": "Streaming TV platform for mobile devices.",
-        "technologies": ["iOS", "Streaming"],
-        "github": "",
-        "live": "https://play.google.com/store/apps/details?id=com.eninetworks.enitv",
-        "image": "📺"
+        "subtitle": "Cross-Platform Camera Monitoring App",
+        "featured": false,
+        "description": "Mobile application for real-time camera monitoring on iOS and Android, allowing users to securely view and manage live video feeds remotely.",
+        "bullets": [
+          "Implemented real-time streaming and remote camera access",
+          "Focused on usability, reliability, and performance under live data conditions",
+          "Delivered a consistent mobile experience across platforms"
+        ],
+        "technologies": [
+          "iOS",
+          "Android",
+          "Streaming",
+          "Mobile UI"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "📷"
+        },
+        "links": {
+          "appStore": "https://apps.apple.com/mx/app/enicam/id1541710259"
+        }
       }
     ]
   },

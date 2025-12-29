@@ -278,33 +278,131 @@
         "credential": ""
       }
     ]
-  },  
+  },
   "projects": {
     "title": "Proyectos Destacados",
     "items": [
       {
-        "title": "Aplicación iOS Wells Fargo",
-        "description": "Entregué nuevas funcionalidades nativas para una aplicación bancaria a gran escala, lideré la migración a GraphQL y mejoré la cobertura de accesibilidad.",
-        "technologies": ["Swift", "SwiftUI", "GraphQL", "Accesibilidad"],
-        "github": "",
-        "live": "https://apps.apple.com/us/developer/wells-fargo/id311548712",
-        "image": "🏦"
+        "title": "Wells Fargo Mobile Banking App",
+        "subtitle": "iOS · Banca Empresarial",
+        "featured": true,
+        "description": "Contribuí al desarrollo de funcionalidades nativas en iOS para una aplicación bancaria a gran escala utilizada por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y seguridad.",
+        "bullets": [
+          "Implementación de nuevas funcionalidades y mejoras en un entorno bancario altamente regulado",
+          "Colaboración cercana con equipos de backend, QA, Android y diseño bajo metodologías Agile Scrum",
+          "Entrega de soluciones accesibles y escalables alineadas con estándares empresariales"
+        ],
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "GraphQL",
+          "Accessibility",
+          "CI/CD"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "🏦"
+        },
+        "links": {
+          "appStore": "https://apps.apple.com/us/developer/wells-fargo/id311548712"
+        }
+      },
+      {
+        "title": "Hand Tracking & Reconocimiento de Gestos",
+        "subtitle": "iOS · Vision · Experiencias Interactivas",
+        "featured": true,
+        "description": "Funcionalidad en iOS lista para producción capaz de detectar gestos de la mano en tiempo real, habilitando experiencias interactivas como reconocimiento de gestos y un juego de piedra, papel o tijera.",
+        "bullets": [
+          "Implementación de detección de poses de la mano en tiempo real utilizando el framework Vision de Apple",
+          "Diseño de un sistema de reconocimiento de gestos con soporte para gestos personalizados",
+          "Desarrollo de un juego interactivo de piedra, papel o tijera basado en gestos",
+          "Optimización de rendimiento y estabilidad en dispositivos reales",
+          "Diseño modular como funcionalidad reutilizable dentro de una app educativa en iOS"
+        ],
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "Vision",
+          "Core ML",
+          "AVFoundation"
+        ],
+        "media": {
+          "type": "video",
+          "src": "/videos/projects/handTracking/demo.mp4",
+          "poster": "/images/projects/handTracking/poster.jpg"
+        },
+        "links": {
+          "caseStudy": "/projects/hand-tracking"
+        }
+      },
+      {
+        "title": "CAPACITY",
+        "subtitle": "Plataforma Empresarial de Gestión de Redes",
+        "featured": true,
+        "description": "Plataforma privada de TI diseñada para administrar y monitorear una red de más de 50,000 usuarios, cumpliendo con estrictos requisitos de escalabilidad y seguridad empresarial.",
+        "bullets": [
+          "Desarrollo de herramientas internas y terminales para mejorar la eficiencia operativa y el monitoreo",
+          "Diseño de componentes distribuidos enfocados en escalabilidad y confiabilidad",
+          "Implementación de servicios backend y lógica de base de datos para flujos empresariales"
+        ],
+        "technologies": [
+          "C#",
+          ".NET",
+          "SQL Server",
+          "APIs",
+          "Distributed Systems"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "🖥️"
+        },
+        "links": {}
+      },
+      {
+        "title": "NOC",
+        "subtitle": "Sistema Multiplataforma de Operaciones y Reportes",
+        "featured": false,
+        "description": "Sistema privado para soporte al cliente en tiempo real, reportes operativos y comunicación interna a través de múltiples plataformas.",
+        "bullets": [
+          "Diseño y desarrollo de componentes web, móviles y APIs REST",
+          "Integración de múltiples sistemas y herramientas de comunicación para flujos operativos",
+          "Soporte para monitoreo y reportes en tiempo real en operaciones orientadas al cliente"
+        ],
+        "technologies": [
+          "Ionic",
+          "REST APIs",
+          "Web Technologies",
+          "Mobile Development"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "📊"
+        },
+        "links": {}
       },
       {
         "title": "EniCam",
-        "description": "Aplicación móvil para monitoreo de cámaras en tiempo real en plataformas iOS y Android.",
-        "technologies": ["Swift", "AVFoundation", "Streaming"],
-        "github": "",
-        "live": "https://apps.apple.com/mx/app/enicam/id1541710259",
-        "image": "📷"
-      },
-      {
-        "title": "EniTV",
-        "description": "Plataforma de TV en streaming para dispositivos móviles.",
-        "technologies": ["iOS", "Streaming"],
-        "github": "",
-        "live": "https://play.google.com/store/apps/details?id=com.eninetworks.enitv",
-        "image": "📺"
+        "subtitle": "Aplicación Multiplataforma de Monitoreo de Cámaras",
+        "featured": false,
+        "description": "Aplicación móvil para monitoreo de cámaras en tiempo real en iOS y Android, permitiendo a los usuarios visualizar y administrar transmisiones de video de forma segura y remota.",
+        "bullets": [
+          "Implementación de streaming en tiempo real y acceso remoto a cámaras",
+          "Enfoque en usabilidad, confiabilidad y rendimiento bajo condiciones de datos en vivo",
+          "Entrega de una experiencia móvil consistente entre plataformas"
+        ],
+        "technologies": [
+          "iOS",
+          "Android",
+          "Streaming",
+          "Mobile UI"
+        ],
+        "media": {
+          "type": "icon",
+          "src": "📷"
+        },
+        "links": {
+          "appStore": "https://apps.apple.com/mx/app/enicam/id1541710259"
+        }
       }
     ]
   },
