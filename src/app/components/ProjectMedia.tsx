@@ -1,74 +1,42 @@
-import { motion } from 'motion/react';
-
-type Media =
-  | {
-      type: 'icon';
-      src: string;
-    }
-  | {
-      type: 'image';
-      src: string;
-    }
-  | {
-      type: 'video';
-      src: string;
-      poster?: string;
-    };
+import { Play } from 'lucide-react';
 
 interface ProjectMediaProps {
-  media?: Media;
+  media: {
+    type: 'video' | 'icon';
+    src: string;
+    poster?: string;
+  };
   title: string;
-  featured?: boolean;
+  onPlay?: () => void;
 }
 
-export function ProjectMedia({
-  media,
-  title,
-  featured,
-}: ProjectMediaProps) {
-  if (!media) return null;
+export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
+  if (media.type === 'video') {
+    return (
+      <button
+        onClick={onPlay}
+        className="relative w-full h-56 group"
+        aria-label={`Open video demo for ${title}`}
+      >
+        <img
+          src={media.poster}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+            <Play className="w-7 h-7 text-gray-900 ml-1" />
+          </div>
+        </div>
+      </button>
+    );
+  }
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center">
-      {featured && (
-        <span className="absolute top-3 left-3 z-10 text-xs px-2 py-1 rounded-full
-          bg-blue-600/90 text-white backdrop-blur">
-          Featured
-        </span>
-      )}
-
-      {media.type === 'video' && (
-        <video
-          className="w-full h-full object-cover"
-          src={media.src}
-          poster={media.poster}
-          muted
-          loop
-          playsInline
-          preload="none"
-          onMouseEnter={(e) => e.currentTarget.play()}
-          onMouseLeave={(e) => e.currentTarget.pause()}
-        />
-      )}
-
-      {media.type === 'image' && (
-        <img
-          src={media.src}
-          alt={title}
-          loading="lazy"
-          className="w-full h-full object-cover"
-        />
-      )}
-
-      {media.type === 'icon' && (
-        <motion.span
-          className="text-8xl"
-          whileHover={{ scale: 1.2, rotate: 5 }}
-          transition={{ type: 'spring', stiffness: 300 }}
-        >
-          {media.src}
-        </motion.span>
-      )}
+    <div className="w-full h-56 flex items-center justify-center text-7xl">
+      {media.src}
     </div>
   );
 }

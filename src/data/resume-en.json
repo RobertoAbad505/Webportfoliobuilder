@@ -334,7 +334,8 @@
           "poster": "/images/projects/handTracking/poster.jpg"
         },
         "links": {
-          "caseStudy": "/projects/hand-tracking"
+          "caseStudy": "/projects/hand-tracking",
+          "github": "https://github.com/RobertoAbad505/HackerKids"
         }
       },      
       {

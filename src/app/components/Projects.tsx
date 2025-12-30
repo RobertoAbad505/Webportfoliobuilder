@@ -1,15 +1,18 @@
-import { ExternalLink, Github, GithubIcon } from 'lucide-react';
+import { useState } from 'react';
+import { ExternalLink, Github } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { TechIcon } from './TechIcon';
 import { ProjectMedia } from './ProjectMedia';
+import { ProjectVideoModal } from './ProjectVideoModal';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Projects() {
   const { data } = useLanguage();
+  const [activeProject, setActiveProject] = useState<any | null>(null);
 
-  // 🔹 Featured projects first
+  // Featured projects first
   const projects = [...data.projects.items].sort(
     (a, b) => Number(b.featured) - Number(a.featured)
   );
@@ -26,38 +29,38 @@ export function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
-              key={project.title}
+              key={`${project.title}-${index}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <Card className="bg-gray-950/50 backdrop-blur-lg border-gray-800
-                hover:shadow-lg hover:shadow-purple-500/10
-                transition-all h-full flex flex-col overflow-hidden"
+              <Card
+                className="
+                  bg-gray-950/50 backdrop-blur-lg border-gray-800
+                  hover:shadow-lg hover:shadow-purple-500/10
+                  transition-all h-full flex flex-col overflow-hidden
+                "
               >
                 {/* Media */}
                 <div className="relative overflow-hidden">
                   <motion.div
-                    className="w-full h-56
+                    className="
+                      w-full h-56
                       bg-gradient-to-br from-blue-900/20 to-purple-900/20
                       backdrop-blur-sm flex items-center justify-center
-                      border-b border-gray-800"
+                      border-b border-gray-800
+                    "
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
                     <ProjectMedia
                       media={project.media}
                       title={project.title}
-                      featured={project.featured}
+                      onPlay={() => setActiveProject(project)}
                     />
                   </motion.div>
-
-                  <div className="absolute inset-0
-                    bg-gradient-to-t from-blue-600/20 to-transparent
-                    opacity-0 group-hover:opacity-100 transition-opacity"
-                  />
                 </div>
 
                 {/* Content */}
@@ -76,25 +79,33 @@ export function Projects() {
                     {project.technologies.map((tech: string) => (
                       <span
                         key={tech}
-                        className="flex items-center gap-2
-                        px-3 py-1
-                      bg-blue-500/10
-                      text-blue-300
-                      rounded-full
-                      text-sm
-                      border border-blue-500/20"
+                        className="
+                          flex items-center gap-2
+                          px-3 py-1
+                          bg-blue-500/10
+                          text-blue-300
+                          rounded-full text-sm
+                          border border-blue-500/20
+                        "
                       >
                         <TechIcon
                           name={tech}
-                          className="w-4 h-4 text-blue-400 flex-shrink-0"/>
+                          className="w-4 h-4 text-blue-400 flex-shrink-0"
+                        />
                         {tech}
                       </span>
                     ))}
                   </div>
+
                   {/* Actions */}
                   <div className="flex gap-3">
                     {project.links?.github && (
-                      <Button variant="outline" size="sm" asChild className="border-gray-700 text-black-300 hover:bg-gray-800 flex-1">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        asChild
+                        className="border-gray-700 text-dark-300 hover:bg-gray-800 flex-1"
+                      >
                         <a
                           href={project.links.github}
                           target="_blank"
@@ -106,16 +117,21 @@ export function Projects() {
                         </a>
                       </Button>
                     )}
-                    {project.links?.live && (
-                      <Button size="sm" asChild className="bg-blue-600 hover:bg-blue-700 flex-1">
+
+                    {project.links?.appStore && (
+                      <Button
+                        size="sm"
+                        asChild
+                        className="bg-blue-600 hover:bg-blue-700 flex-1"
+                      >
                         <a
-                          href={project.links.live}
+                          href={project.links.appStore}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="gap-2"
                         >
                           <ExternalLink size={16} />
-                          View
+                          App Store
                         </a>
                       </Button>
                     )}
@@ -126,6 +142,15 @@ export function Projects() {
           ))}
         </div>
       </div>
+
+      {/* Video modal */}
+      <ProjectVideoModal
+        open={!!activeProject}
+        onClose={() => setActiveProject(null)}
+        title={activeProject?.title}
+        description={activeProject?.description}
+        videoSrc={activeProject?.media?.src}
+      />
     </section>
   );
 }
