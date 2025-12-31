@@ -302,8 +302,9 @@
           "CI/CD"
         ],
         "media": {
-          "type": "icon",
-          "src": "🏦"
+          "type": "image",
+          "src": "/images/projects/wellsfargo/poster.jpeg",
+          "poster": "/images/projects/wellsfargo/poster.jpeg"
         },
         "links": {
           "appStore": "https://apps.apple.com/us/developer/wells-fargo/id311548712"
@@ -375,11 +376,14 @@
           "Ionic",
           "REST APIs",
           "Web Technologies",
-          "Mobile Development"
+          ".NET",
+          "Mobile Development",
+          "Python"          
         ],
         "media": {
-          "type": "icon",
-          "src": "📊"
+          "type": "image",
+          "src": "/images/projects/noc/poster.jpg",
+          "poster": "/images/projects/noc/poster.jpg"
         },
         "links": {}
       },
@@ -397,7 +401,11 @@
           "iOS",
           "Android",
           "Streaming",
-          "Mobile UI"
+          "Mobile UI",
+          "Java",
+          "WildFly serverr",
+          "API integration",
+          "ionic"
         ],
         "media": {
           "type": "icon",

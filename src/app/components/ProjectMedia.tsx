@@ -2,7 +2,7 @@ import { Play } from 'lucide-react';
 
 interface ProjectMediaProps {
   media: {
-    type: 'video' | 'icon';
+    type: 'video' | 'icon' | 'image';
     src: string;
     poster?: string;
   };
@@ -31,6 +31,14 @@ export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
           </div>
         </div>
       </button>
+    );
+  } else if (media.type === 'image') {
+    return (
+      <img
+          src={media.poster}
+          alt={title}
+          className="w-full h-full object-cover"
+        />
     );
   }
 
