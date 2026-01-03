@@ -25,10 +25,15 @@ export function ProjectMedia({
       return (
         <video
           src={media.src}
-          poster={media.poster}
           controls
           playsInline
-          className="w-full h-full object-cover"
+          className="
+          w-full h-auto
+          max-h-[60vh]
+          md:max-h-[70vh]
+          lg:max-h-[75vh]
+          object-contain
+          "
         />
       );
     }
@@ -40,7 +45,7 @@ export function ProjectMedia({
         className="relative w-full h-56 group"
         aria-label={`Open video demo for ${title}`}
       >
-        <img
+       <img
           src={media.poster}
           alt={title}
           className="

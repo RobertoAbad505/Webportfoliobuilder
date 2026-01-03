@@ -89,7 +89,15 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
 
           {/* Media */}
           <div className="p-6">
-           <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-gray-800">
+          <div
+              className="
+                relative w-full
+                rounded-xl
+                overflow-hidden
+                border border-gray-800
+                bg-black
+              "
+            >
               <ProjectMedia
                 media={project.media}
                 title={project.title}
