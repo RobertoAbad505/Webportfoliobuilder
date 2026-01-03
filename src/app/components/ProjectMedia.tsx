@@ -7,11 +7,33 @@ interface ProjectMediaProps {
     poster?: string;
   };
   title: string;
+  mode?: 'preview' | 'inline';
   onPlay?: () => void;
 }
 
-export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
+export function ProjectMedia({
+  media,
+  title,
+  mode = 'preview',
+  onPlay,
+}: ProjectMediaProps) {
+
   if (media.type === 'video') {
+
+    // ▶️ INLINE VIDEO (Case Study)
+    if (mode === 'inline') {
+      return (
+        <video
+          src={media.src}
+          poster={media.poster}
+          controls
+          playsInline
+          className="w-full h-full object-cover"
+        />
+      );
+    }
+
+    // 🖼 PREVIEW (Project card)
     return (
       <button
         onClick={onPlay}
@@ -21,10 +43,12 @@ export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
         <img
           src={media.poster}
           alt={title}
-          className="w-full h-full object-cover"
+          className="
+            w-full h-full
+            object-cover
+            scale-[1.02]
+          "
         />
-
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
           <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
             <Play className="w-7 h-7 text-gray-900 ml-1" />
@@ -32,13 +56,15 @@ export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
         </div>
       </button>
     );
-  } else if (media.type === 'image') {
+  }
+
+  if (media.type === 'image') {
     return (
       <img
-          src={media.poster}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+        src={media.src}
+        alt={title}
+        className="w-full h-full object-cover"
+      />
     );
   }
 
@@ -48,3 +74,4 @@ export function ProjectMedia({ media, title, onPlay }: ProjectMediaProps) {
     </div>
   );
 }
+

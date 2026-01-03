@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, BookOpen } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
@@ -7,11 +7,17 @@ import { TechIcon } from './TechIcon';
 import { ProjectMedia } from './ProjectMedia';
 import { ProjectVideoModal } from './ProjectVideoModal';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { CaseStudyModal } from './CaseStudyModal';
 
 export function Projects() {
   const { data } = useLanguage();
   const [activeProject, setActiveProject] = useState<any | null>(null);
-
+  const [activeCaseStudy, setActiveCaseStudy] = useState<Project | null>(null);
+  const ctaMotion = {
+    whileHover: { y: -1 },
+    transition: { type: 'spring', stiffness: 250, damping: 20 },
+  };
+  
   // Featured projects first
   const projects = [...data.projects.items].sort(
     (a, b) => Number(b.featured) - Number(a.featured)
@@ -98,50 +104,96 @@ export function Projects() {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-2">
+                    {/* App Store – Primary */}
+                    {project.links?.appStore && (
+                      <motion.div {...ctaMotion} className="w-full">
+                        <Button
+                          size="sm"
+                          asChild
+                          className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                        >
+                          <a
+                            href={project.links.appStore}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex w-full items-center justify-center gap-2"
+                          >
+                            <motion.span
+                              className="flex w-full items-center justify-center gap-2"
+                              whileHover={{ x: 4 }}
+                              transition={{ type: 'spring', stiffness: 300 }}
+                            >
+                              <ExternalLink size={16} />
+                              App Store
+                            </motion.span>
+                          </a>
+                        </Button>
+                      </motion.div>
+                    )}
+
+                    {/* GitHub – Secondary */}
                     {project.links?.github && (
+                    <motion.div {...ctaMotion} className="w-full">
                       <Button
                         variant="outline"
                         size="sm"
                         asChild
-                        className="border-gray-700 text-dark-300 hover:bg-gray-800 flex-1"
+                        className="w-full border-gray-700 hover:bg-gray-800"
                       >
                         <a
                           href={project.links.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="gap-2"
+                          className="flex w-full items-center justify-center gap-2"
                         >
-                          <Github size={16} />
-                          Code
+                          <motion.span
+                            className="flex w-full items-center justify-center gap-2"
+                            whileHover={{ x: 4 }}
+                            transition={{ type: 'spring', stiffness: 300 }}
+                          >
+                            <Github size={16} />
+                            Code
+                          </motion.span>
                         </a>
                       </Button>
-                    )}
+                    </motion.div>
+                  )}
 
-                    {project.links?.appStore && (
+                  {/* Case Study – Tertiary */}
+                  {project.links?.caseStudy && (
+                    <motion.div {...ctaMotion} className="w-full">
                       <Button
+                        variant="secondary"
                         size="sm"
-                        asChild
-                        className="bg-blue-600 hover:bg-blue-700 flex-1"
+                        onClick={() => setActiveCaseStudy(project)}
+                        className="w-full"
                       >
-                        <a
-                          href={project.links.appStore}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="gap-2"
+                        <motion.span
+                          className="flex w-full items-center justify-center gap-2"
+                          whileHover={{ x: 4 }}
+                          transition={{ type: 'spring', stiffness: 300 }}
                         >
-                          <ExternalLink size={16} />
-                          App Store
-                        </a>
+                          <BookOpen size={16} />
+                          {data.buttons.caseStudy}
+                        </motion.span>
                       </Button>
-                    )}
+                    </motion.div>
+                  )}
                   </div>
+
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </div>
       </div>
+      {activeCaseStudy && (
+        <CaseStudyModal
+          project={activeCaseStudy}
+          onClose={() => setActiveCaseStudy(null)}
+        />
+      )}
 
       {/* Video modal */}
       <ProjectVideoModal

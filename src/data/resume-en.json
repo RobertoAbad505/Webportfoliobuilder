@@ -311,17 +311,11 @@
         }
       },
       {
+        "id": "hand-tracking",
         "title": "Hand Tracking & Gesture Recognition",
         "subtitle": "iOS · Vision · Interactive Experiences",
         "featured": true,
-        "description": "Production-ready iOS feature capable of detecting hand gestures in real time, enabling interactive experiences such as gesture recognition and a rock–paper–scissors game.",
-        "bullets": [
-          "Implemented real-time hand pose detection using Apple Vision framework",
-          "Designed a gesture recognition system supporting custom gestures",
-          "Built an interactive rock–paper–scissors game using hand gestures",
-          "Optimized for performance and stability on real devices",
-          "Designed as a modular feature within an educational iOS app"
-        ],
+        "description": "Production-ready iOS feature capable of detecting hand gestures in real time.",
         "technologies": [
           "Swift",
           "SwiftUI",
@@ -335,8 +329,40 @@
           "poster": "/images/projects/handTracking/poster.jpg"
         },
         "links": {
-          "caseStudy": "/projects/hand-tracking",
+          "caseStudy": true,
           "github": "https://github.com/RobertoAbad505/HackerKids"
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "Production-ready feature designed to explore real-time hand gesture recognition on iOS."
+            },
+            {
+              "type": "problem",
+              "content": "Real-time gesture recognition requires balancing accuracy, performance, and user feedback."
+            },
+            {
+              "type": "solution",
+              "content": "Using Apple Vision and Core ML, I designed a modular gesture detection pipeline."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Maintaining real-time performance on mobile devices",
+                "Reducing gesture misclassification",
+                "Designing feedback for invisible interactions"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Stable real-time gesture recognition",
+                "Interactive rock–paper–scissors demo",
+                "Reusable modular architecture"
+              ]
+            }
+          ]
         }
       },      
       {
@@ -494,6 +520,15 @@
   },
   "buttons": {
     "downloadResume": "Download Resume",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "caseStudy": "Case Study"
+  },
+  "caseStudySections": {
+    "overview": "Overview",
+    "problem": "Problem",
+    "solution": "Solution",
+    "technicalChallenges": "Technical Challenges",
+    "outcome": "Outcome",
+    "skills": "Skills Used"
   }
 }

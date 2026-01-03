@@ -333,7 +333,7 @@
           "poster": "/images/projects/handTracking/poster.jpg"
         },
         "links": {
-          "caseStudy": "/projects/hand-tracking",
+          "caseStudy": "hand-tracking",
           "github": "https://github.com/RobertoAbad505/HackerKids"
         }
       },
@@ -492,6 +492,15 @@
   },
   "buttons": {
     "downloadResume": "Descargar CV",
-    "getInTouch": "Contáctame"
+    "getInTouch": "Contáctame",
+    "caseStudy": "Caso de estudio"
+  },
+  "caseStudySections": {
+    "overview": "Resumen",
+    "problem": "Problema",
+    "solution": "Solución",
+    "technicalChallenges": "Retos Técnicos",
+    "outcome": "Resultado",
+    "skills": "Tecnologías Utilizadas"
   }
 }

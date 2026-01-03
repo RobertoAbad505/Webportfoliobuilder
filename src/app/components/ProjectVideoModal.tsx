@@ -80,12 +80,16 @@ export function ProjectVideoModal({
 
             {/* Video */}
             <div className="aspect-video bg-black">
-              <video
+            <video
                 src={videoSrc}
                 controls
                 autoPlay
                 playsInline
-                className="w-full h-full object-contain"
+                className="
+                  w-full h-full
+                  object-contain
+                  bg-black
+                "
               />
             </div>
 
