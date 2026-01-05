@@ -1,9 +1,9 @@
 {
   "personalInfo": {
-    "salutMessage": "Hola!, yo soy ",
+    "salutMessage": "Hola, soy",
     "name": "Roberto Abad Ramirez Nieves",
     "title": "Senior Software Engineer",
-    "description": "Ingeniero de Software Senior con más de 7 años de experiencia construyendo productos digitales escalables y de alto impacto en plataformas móviles y web. Sólida trayectoria en iOS, arquitecturas frontend modernas, integración de APIs y desarrollo de aplicaciones empresariales utilizadas por millones de usuarios.",
+    "description": "Ingeniero de Software Senior con más de 7 años de experiencia diseñando y desarrollando productos digitales escalables y de alto impacto en plataformas móviles y web. Especializado en desarrollo iOS, arquitecturas modernas de frontend y sistemas empresariales utilizados por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y arquitectura mantenible.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
     "phone": "+52 442 333 0132",
@@ -17,31 +17,31 @@
     "whatsapp": "https://wa.me/5214423330132"
   },
   "about": {
-    "title": "Sobre Mí",
+    "title": "Sobre mí",
     "paragraphs": [
-      "Soy un ingeniero de software enfocado en construir productos digitales confiables, escalables y bien diseñados, trabajando en entornos complejos y de alto impacto como banca, plataformas empresariales y aplicaciones de consumo.",
-      "Mi experiencia abarca desarrollo nativo iOS, tecnologías frontend modernas e integración de servicios backend, lo que me permite contribuir más allá de la implementación de funcionalidades, participando en decisiones de arquitectura, diseño de sistemas, rendimiento, accesibilidad y mantenibilidad a largo plazo.",
-      "Me desenvuelvo especialmente bien en entornos colaborativos donde convergen tecnología, producto y diseño, destacando por mi capacidad de adaptación a distintos stacks y dominios, manteniendo siempre un enfoque sólido en calidad, claridad técnica y valor para el usuario."
+      "Soy un ingeniero de software enfocado en diseñar y desarrollar productos digitales confiables, escalables y bien estructurados, dentro de entornos complejos y de alto impacto como plataformas empresariales, sistemas bancarios y aplicaciones orientadas al usuario final.",
+      "Mi experiencia abarca desarrollo nativo en iOS, tecnologías modernas de frontend e integración de servicios backend, lo que me permite aportar más allá de la implementación de funcionalidades: desde discusiones de arquitectura y diseño de sistemas hasta optimización de rendimiento, accesibilidad y mantenibilidad a largo plazo.",
+      "Disfruto trabajar en entornos colaborativos donde convergen ingeniería, producto y diseño. Me adapto rápidamente a nuevos stacks y dominios, manteniendo siempre una mentalidad sólida de ingeniería enfocada en la calidad, la claridad técnica y la entrega de valor real a los usuarios."
     ],
     "highlights": [
       {
         "title": "Ingeniería de Producto",
-        "description": "Construcción de aplicaciones escalables y mantenibles con fuerte enfoque en calidad, confiabilidad del sistema y necesidades reales de los usuarios.",
+        "description": "Diseño y desarrollo de aplicaciones escalables y mantenibles, con un fuerte enfoque en calidad de código, confiabilidad del sistema y necesidades reales del usuario.",
         "icon": "package"
       },
       {
-        "title": "Accesibilidad & UX",
-        "description": "Diseño e implementación de interfaces inclusivas que cumplen estándares de accesibilidad sin sacrificar usabilidad ni calidad visual.",
+        "title": "Accesibilidad & Experiencia de Usuario",
+        "description": "Creación de interfaces inclusivas y accesibles que cumplen con estándares sin sacrificar usabilidad ni calidad visual.",
         "icon": "accessibility"
       },
       {
         "title": "Arquitectura & Escalabilidad",
-        "description": "Participación activa en decisiones de arquitectura, modernización de código legacy y definición de estrategias técnicas a largo plazo.",
+        "description": "Participación activa en decisiones de arquitectura, diseño de sistemas y modernización de plataformas orientadas al crecimiento a largo plazo.",
         "icon": "git-branch"
       },
       {
         "title": "Colaboración & Liderazgo Técnico",
-        "description": "Mentoría a ingenieros, liderazgo de iniciativas técnicas y colaboración estrecha con equipos multidisciplinarios y distribuidos.",
+        "description": "Trabajo cercano con equipos multidisciplinarios, mentoría a ingenieros y liderazgo en iniciativas técnicas dentro de entornos distribuidos.",
         "icon": "users"
       }
     ]
@@ -49,45 +49,48 @@
   "skills": {
     "title": "Habilidades y Tecnologías",
     "categories": {
-      "Mobile": [
+      "Desarrollo iOS y Mobile": [
         { "name": "Swift", "icon": "swift" },
         { "name": "SwiftUI", "icon": "swiftui" },
         { "name": "UIKit", "icon": "uikit" },
         { "name": "Combine", "icon": "combine" },
-        { "name": "Accessibility (VoiceOver, Dynamic Type)", "icon": "accessibility" }
+        { "name": "Accesibilidad en iOS (VoiceOver, Dynamic Type)", "icon": "accessibility" },
+        { "name": "Arquitectura modular y limpia (MVVM, diseño por capas)", "icon": "architecture" }
       ],
-      "Web Frontend": [
+      "Frontend Web": [
         { "name": "HTML5", "icon": "html" },
         { "name": "CSS3 / Tailwind CSS", "icon": "css" },
         { "name": "JavaScript / TypeScript", "icon": "javascript" },
         { "name": "React", "icon": "react" },
         { "name": "Vite", "icon": "vite" }
       ],
-      "Backend & APIs": [
-        { "name": "REST APIs", "icon": "api" },
+      "Backend e Integración de APIs": [
+        { "name": "APIs REST", "icon": "api" },
         { "name": "GraphQL", "icon": "graphql" },
-        { "name": "Apollo GraphQL", "icon": "apollo" },
-        { "name": "Django", "icon": "django" },
+        { "name": "Apollo GraphQL (integración de cliente y esquemas)", "icon": "apollo" },
+        { "name": "Django (servicios orientados a APIs)", "icon": "django" },
         { "name": ".NET / C#", "icon": "dotnet" },
         { "name": "Java Spring", "icon": "spring" }
       ],
-      "Databases (Bases de datos)": [
+      "Bases de Datos y Modelado de Datos": [
         { "name": "SQL Server", "icon": "sqlserver" },
         { "name": "PostgreSQL", "icon": "postgresql" },
         { "name": "MySQL", "icon": "mysql" },
-        { "name": "Stored Procedures", "icon": "database" }
+        { "name": "Procedimientos almacenados y optimización de consultas", "icon": "sqlserver" }
       ],
-      "Cloud & Infrastructure": [
-        { "name": "IIS Server Administration", "icon": "server" },
-        { "name": "CI/CD Pipelines", "icon": "cicd" },
-        { "name": "Firebase Hosting", "icon": "firebase" }
+      "Infraestructura, Cloud y CI/CD": [
+        { "name": "Pipelines de CI/CD", "icon": "cicd" },
+        { "name": "Jenkins CI/CD", "icon": "jenkins" },
+        { "name": "Firebase Hosting", "icon": "firebase" },
+        { "name": "Administración de servidores IIS", "icon": "server" }
       ],
-      "Engineering Practices": [
-        { "name": "Git & Version Control", "icon": "git" },
-        { "name": "Agile / Scrum", "icon": "agile" },
-        { "name": "Clean Architecture", "icon": "architecture" },
-        { "name": "Legacy Modernization", "icon": "refactor" },
-        { "name": "Performance Optimization", "icon": "performance" }
+      "Prácticas de Ingeniería": [
+        { "name": "Git y control de versiones", "icon": "git" },
+        { "name": "Metodologías Ágiles / Scrum", "icon": "agile" },
+        { "name": "Arquitectura limpia y escalable", "icon": "architecture" },
+        { "name": "Modernización de sistemas legacy", "icon": "refactor" },
+        { "name": "Optimización de rendimiento", "icon": "performance" },
+        { "name": "Concurrencia y multihilo", "icon": "multithread" }
       ]
     }
   },
@@ -286,12 +289,7 @@
         "title": "Wells Fargo Mobile Banking App",
         "subtitle": "iOS · Banca Empresarial",
         "featured": true,
-        "description": "Contribuí al desarrollo de funcionalidades nativas en iOS para una aplicación bancaria a gran escala utilizada por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y seguridad.",
-        "bullets": [
-          "Implementación de nuevas funcionalidades y mejoras en un entorno bancario altamente regulado",
-          "Colaboración cercana con equipos de backend, QA, Android y diseño bajo metodologías Agile Scrum",
-          "Entrega de soluciones accesibles y escalables alineadas con estándares empresariales"
-        ],
+        "description": "Contribuí al desarrollo de funcionalidades nativas en iOS para una aplicación bancaria a gran escala utilizada por millones de usuarios, con un fuerte enfoque en accesibilidad, rendimiento y estándares empresariales.",
         "technologies": [
           "Swift",
           "SwiftUI",
@@ -309,17 +307,11 @@
         }
       },
       {
-        "title": "Hand Tracking & Reconocimiento de Gestos",
+        "id": "hand-tracking",
+        "title": "Hand Tracking & Gesture Recognition",
         "subtitle": "iOS · Vision · Experiencias Interactivas",
         "featured": true,
-        "description": "Funcionalidad en iOS lista para producción capaz de detectar gestos de la mano en tiempo real, habilitando experiencias interactivas como reconocimiento de gestos y un juego de piedra, papel o tijera.",
-        "bullets": [
-          "Implementación de detección de poses de la mano en tiempo real utilizando el framework Vision de Apple",
-          "Diseño de un sistema de reconocimiento de gestos con soporte para gestos personalizados",
-          "Desarrollo de un juego interactivo de piedra, papel o tijera basado en gestos",
-          "Optimización de rendimiento y estabilidad en dispositivos reales",
-          "Diseño modular como funcionalidad reutilizable dentro de una app educativa en iOS"
-        ],
+        "description": "Funcionalidad iOS lista para producción enfocada en el reconocimiento de gestos de mano en tiempo real y experiencias interactivas.",
         "technologies": [
           "Swift",
           "SwiftUI",
@@ -333,81 +325,117 @@
           "poster": "/images/projects/handTracking/poster.jpg"
         },
         "links": {
-          "caseStudy": "hand-tracking",
+          "caseStudy": true,
           "github": "https://github.com/RobertoAbad505/HackerKids"
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "Funcionalidad lista para producción diseñada para explorar el reconocimiento de gestos de mano en tiempo real en iOS."
+            },
+            {
+              "type": "problem",
+              "content": "El reconocimiento de gestos en tiempo real requiere un balance preciso entre exactitud, rendimiento y retroalimentación al usuario."
+            },
+            {
+              "type": "solution",
+              "content": "Utilizando Apple Vision y Core ML, diseñé un pipeline modular para la detección y clasificación de gestos."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Mantener rendimiento en tiempo real en dispositivos móviles",
+                "Reducir errores de clasificación de gestos",
+                "Diseñar retroalimentación visual para interacciones no visibles"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Reconocimiento de gestos estable en tiempo real",
+                "Demo interactivo de piedra, papel o tijera",
+                "Arquitectura modular reutilizable"
+              ]
+            }
+          ]
         }
       },
       {
-        "title": "CAPACITY",
-        "subtitle": "Plataforma Empresarial de Gestión de Redes",
+        "id": "eninetworks-network-intelligence",
+        "title": "Network Intelligence Platform",
+        "subtitle": "ISP · Infraestructura · Gestión de Direcciones IP",
         "featured": true,
-        "description": "Plataforma privada de TI diseñada para administrar y monitorear una red de más de 50,000 usuarios, cumpliendo con estrictos requisitos de escalabilidad y seguridad empresarial.",
-        "bullets": [
-          "Desarrollo de herramientas internas y terminales para mejorar la eficiencia operativa y el monitoreo",
-          "Diseño de componentes distribuidos enfocados en escalabilidad y confiabilidad",
-          "Implementación de servicios backend y lógica de base de datos para flujos empresariales"
-        ],
+        "description": "Sistemas internos empresariales diseñados para centralizar la gestión de direcciones IP, automatizar la visibilidad de red y recuperar el control operativo en un ISP en rápido crecimiento.",
         "technologies": [
           "C#",
           ".NET",
           "SQL Server",
-          "APIs",
-          "Distributed Systems"
-        ],
-        "media": {
-          "type": "icon",
-          "src": "🖥️"
-        },
-        "links": {}
-      },
-      {
-        "title": "NOC",
-        "subtitle": "Sistema Multiplataforma de Operaciones y Reportes",
-        "featured": false,
-        "description": "Sistema privado para soporte al cliente en tiempo real, reportes operativos y comunicación interna a través de múltiples plataformas.",
-        "bullets": [
-          "Diseño y desarrollo de componentes web, móviles y APIs REST",
-          "Integración de múltiples sistemas y herramientas de comunicación para flujos operativos",
-          "Soporte para monitoreo y reportes en tiempo real en operaciones orientadas al cliente"
-        ],
-        "technologies": [
-          "Ionic",
-          "REST APIs",
-          "Web Technologies",
-          ".NET",
-          "Mobile Development",
-          "Python"          
+          "SNMP",
+          "ASP .NET",
+          "VPN",
+          "Infraestructura de Red"
         ],
         "media": {
           "type": "image",
           "src": "/images/projects/noc/poster.jpg",
           "poster": "/images/projects/noc/poster.jpg"
         },
-        "links": {}
+        "links": {
+          "caseStudy": true
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "Eninetworks era un ISP inalámbrico en rápido crecimiento que brindaba conectividad a regiones donde la infraestructura de fibra óptica no estaba disponible. Este crecimiento acelerado expuso deficiencias críticas en la gestión de direcciones IP, visibilidad de red y coordinación interna."
+            },
+            {
+              "type": "problem",
+              "content": "Las operaciones de red dependían de archivos Excel compartidos para administrar direcciones IP, clientes e infraestructura. Esto provocaba duplicación de IPs, clientes inactivos consumiendo recursos, falta de trazabilidad y un alto riesgo operativo a medida que la red escalaba a nivel nacional."
+            },
+            {
+              "type": "solution",
+              "content": "Diseñé y desarrollé un conjunto de plataformas internas que reemplazaron los flujos basados en Excel por sistemas centralizados con control de accesos, visibilidad en tiempo real, reportes automatizados y datos estructurados a nivel nacional."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Modelar jerárquicamente la infraestructura nacional del ISP (regiones, nodos, sectores, segmentos e IPs)",
+                "Garantizar consistencia y trazabilidad de miles de activos de red",
+                "Integrar información de equipos de red mediante SNMP",
+                "Automatizar la recolección de datos a través de nodos remotos conectados por VPN",
+                "Diseñar accesos seguros basados en roles para múltiples áreas"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Recuperación del control sobre la asignación de direcciones IP y clientes",
+                "Identificación de clientes inactivos y uso no autorizado de IPs",
+                "Eliminación de Excel como fuente principal de datos",
+                "Habilitación de reportes en tiempo real y toma de decisiones basada en datos",
+                "Mejora significativa en la coordinación operativa entre regiones"
+              ]
+            }
+          ]
+        }
       },
       {
         "title": "EniCam",
-        "subtitle": "Aplicación Multiplataforma de Monitoreo de Cámaras",
+        "subtitle": "Aplicación de Monitoreo de Cámaras Multiplataforma",
         "featured": false,
-        "description": "Aplicación móvil para monitoreo de cámaras en tiempo real en iOS y Android, permitiendo a los usuarios visualizar y administrar transmisiones de video de forma segura y remota.",
-        "bullets": [
-          "Implementación de streaming en tiempo real y acceso remoto a cámaras",
-          "Enfoque en usabilidad, confiabilidad y rendimiento bajo condiciones de datos en vivo",
-          "Entrega de una experiencia móvil consistente entre plataformas"
-        ],
+        "description": "Aplicación móvil multiplataforma para el monitoreo seguro de cámaras en tiempo real en iOS y Android.",
         "technologies": [
           "iOS",
           "Android",
           "Streaming",
-          "Mobile UI",
-          "Java",
-          "WildFly serverr",
-          "API integration",
-          "ionic"
+          "Ionic",
+          "Integración de APIs"
         ],
         "media": {
           "type": "icon",
-          "src": "📷"
+          "src": "📹"
         },
         "links": {
           "appStore": "https://apps.apple.com/mx/app/enicam/id1541710259"

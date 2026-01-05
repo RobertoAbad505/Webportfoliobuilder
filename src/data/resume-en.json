@@ -1,9 +1,9 @@
 {
   "personalInfo": {
-    "salutMessage": "Hi, I'm ",
+    "salutMessage": "Hi, I’m",
     "name": "Roberto Abad Ramirez Nieves",
     "title": "Senior Software Engineer",
-    "description": "Senior Software Engineer with 7+ years of experience building scalable, high-impact digital products across mobile and web platforms. Strong background in iOS, modern frontend architectures, API integration, and enterprise-grade applications used by millions of users.",
+    "description": "Senior Software Engineer with 7+ years of experience designing and building scalable, high-impact products across mobile and web platforms. Specialized in iOS development, modern frontend architectures, and enterprise-grade systems used by millions of users. Strong focus on performance, accessibility, and maintainable architecture.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
     "phone": "+52 442 333 0132",
@@ -19,29 +19,29 @@
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "I am a software engineer focused on building reliable, scalable, and well-crafted digital products in complex and high-impact environments, including banking, enterprise platforms, and consumer-facing applications.",
-      "My experience spans across native iOS development, modern frontend technologies, and backend service integration, allowing me to contribute beyond feature delivery — from architecture discussions and system design to performance, accessibility, and long-term maintainability.",
-      "I thrive in collaborative environments where technology, product, and design intersect, and I am known for adapting quickly to new stacks and domains while maintaining a strong engineering mindset focused on quality, clarity, and user value."
+      "I am a software engineer focused on designing and building reliable, scalable, and well-crafted digital products in complex, high-impact environments, including enterprise platforms, banking systems, and consumer-facing applications.",
+      "My experience spans native iOS development, modern frontend technologies, and backend service integration, allowing me to contribute beyond feature delivery — from architecture discussions and system design to performance optimization, accessibility, and long-term maintainability.",
+      "I thrive in collaborative environments where engineering, product, and design intersect. I am known for adapting quickly to new stacks and domains while maintaining a strong engineering mindset centered on quality, clarity, and delivering real value to users."
     ],
     "highlights": [
       {
         "title": "Product Engineering",
-        "description": "Building scalable and maintainable applications with a strong focus on code quality, system reliability, and real-world user needs.",
+        "description": "Designing and building scalable, maintainable applications with a strong focus on code quality, system reliability, and real-world user needs.",
         "icon": "package"
       },
       {
         "title": "Accessibility & UX",
-        "description": "Designing and delivering inclusive interfaces that meet accessibility standards while preserving usability and visual quality.",
+        "description": "Delivering inclusive and accessible user experiences that meet industry standards without compromising usability or visual quality.",
         "icon": "accessibility"
       },
       {
         "title": "Architecture & Scalability",
-        "description": "Contributing to architectural decisions, legacy modernization efforts, and technical strategies that support long-term growth.",
+        "description": "Contributing to architectural decisions, system design, and modernization efforts that support long-term growth and scalability.",
         "icon": "git-branch"
       },
       {
         "title": "Collaboration & Technical Leadership",
-        "description": "Mentoring engineers, driving technical initiatives, and collaborating closely with cross-functional and distributed teams.",
+        "description": "Collaborating closely with cross-functional teams, mentoring engineers, and driving technical initiatives across distributed environments.",
         "icon": "users"
       }
     ]
@@ -49,12 +49,13 @@
   "skills": {
     "title": "Skills & Technologies",
     "categories": {
-      "Mobile Development": [
+      "iOS & Mobile Development": [
         { "name": "Swift", "icon": "swift" },
         { "name": "SwiftUI", "icon": "swiftui" },
         { "name": "UIKit", "icon": "uikit" },
         { "name": "Combine", "icon": "combine" },
-        { "name": "Accessibility (VoiceOver, Dynamic Type)", "icon": "accessibility" }
+        { "name": "iOS Accessibility (VoiceOver, Dynamic Type)", "icon": "accessibility" },
+        { "name": "Modular & Clean Architecture (MVVM, layered design)", "icon": "architecture" }
       ],
       "Web Frontend": [
         { "name": "HTML5", "icon": "html" },
@@ -63,33 +64,33 @@
         { "name": "React", "icon": "react" },
         { "name": "Vite", "icon": "vite" }
       ],
-      "Backend & APIs": [
-        { "name": "REST APIs", "icon": "api" },
+      "Backend & API Integration": [
+        { "name": "RESTful APIs", "icon": "api" },
         { "name": "GraphQL", "icon": "graphql" },
-        { "name": "Apollo GraphQL", "icon": "apollo" },
-        { "name": "Django", "icon": "django" },
+        { "name": "Apollo GraphQL (Client & Schema Integration)", "icon": "apollo" },
+        { "name": "Django (API-driven services)", "icon": "django" },
         { "name": ".NET / C#", "icon": "dotnet" },
         { "name": "Java Spring", "icon": "spring" }
       ],
-      "Databases": [
+      "Databases & Data Modeling": [
         { "name": "SQL Server", "icon": "sqlserver" },
         { "name": "PostgreSQL", "icon": "postgresql" },
         { "name": "MySQL", "icon": "mysql" },
-        { "name": "Stored Procedures", "icon": "sqlserver" }
+        { "name": "Stored Procedures & Query Optimization", "icon": "sqlserver" }
       ],
-      "Cloud & Infrastructure": [
-        { "name": "IIS Server Administration", "icon": "server" },
+      "Cloud, CI/CD & Infrastructure": [
         { "name": "CI/CD Pipelines", "icon": "cicd" },
+        { "name": "Jenkins CI/CD", "icon": "jenkins" },
         { "name": "Firebase Hosting", "icon": "firebase" },
-        { "name": "Jenkins CI/CD", "icon": "jenkins" }
+        { "name": "IIS Server Administration", "icon": "server" }
       ],
       "Engineering Practices": [
         { "name": "Git & Version Control", "icon": "git" },
         { "name": "Agile / Scrum", "icon": "agile" },
-        { "name": "Clean Architecture", "icon": "architecture" },
-        { "name": "Legacy Modernization", "icon": "refactor" },
+        { "name": "Clean & Scalable Architecture", "icon": "architecture" },
+        { "name": "Legacy System Modernization", "icon": "refactor" },
         { "name": "Performance Optimization", "icon": "performance" },
-        { "name": "Multi-Threading", "icon": "multithread" }
+        { "name": "Concurrency & Multi-Threading", "icon": "multithread" }
       ]
     }
   },
@@ -288,12 +289,7 @@
         "title": "Wells Fargo Mobile Banking App",
         "subtitle": "iOS · Enterprise Banking",
         "featured": true,
-        "description": "Contributed to the development of native iOS features for a large-scale banking application serving millions of users, with a strong focus on performance, accessibility, and security.",
-        "bullets": [
-          "Implemented new user-facing features and improvements in a highly regulated banking environment",
-          "Worked closely with backend, QA, Android, and design teams in Agile Scrum workflows",
-          "Delivered accessible and scalable solutions aligned with enterprise standards"
-        ],
+        "description": "Contributed to native iOS features for a large-scale banking application used by millions, with a strong focus on accessibility, performance, and enterprise standards.",
         "technologies": [
           "Swift",
           "SwiftUI",
@@ -315,7 +311,7 @@
         "title": "Hand Tracking & Gesture Recognition",
         "subtitle": "iOS · Vision · Interactive Experiences",
         "featured": true,
-        "description": "Production-ready iOS feature capable of detecting hand gestures in real time.",
+        "description": "Production-ready iOS feature exploring real-time hand gesture recognition and interactive experiences.",
         "technologies": [
           "Swift",
           "SwiftUI",
@@ -366,76 +362,80 @@
         }
       },      
       {
-        "title": "CAPACITY",
-        "subtitle": "Enterprise Network Management Platform",
+        "id": "eninetworks-network-intelligence",
+        "title": "Network Intelligence Platform",
+        "subtitle": "ISP · Infrastructure · IP Asset Management",
         "featured": true,
-        "description": "Private multi-node IT platform designed to manage and monitor a network of over 50,000 users, built to meet strict enterprise scalability and security requirements.",
-        "bullets": [
-          "Developed internal tools and terminals to support operational efficiency and monitoring",
-          "Designed distributed system components for scalability and reliability",
-          "Implemented backend services and database logic for enterprise workflows"
-        ],
+        "description": "Enterprise internal systems designed to centralize IP address management, automate network visibility, and regain operational control across a rapidly growing ISP.",
         "technologies": [
           "C#",
           ".NET",
           "SQL Server",
-          "APIs",
-          "Distributed Systems"
-        ],
-        "media": {
-          "type": "icon",
-          "src": "🖥️"
-        },
-        "links": {}
-      },
-      {
-        "title": "NOC",
-        "subtitle": "Multi-Platform Operations & Reporting System",
-        "featured": false,
-        "description": "Private system for real-time customer support, operational reporting, and internal communication across multiple platforms.",
-        "bullets": [
-          "Designed and developed web, mobile, and REST API components",
-          "Integrated multiple systems and communication tools for operational workflows",
-          "Supported real-time reporting and monitoring for customer-facing operations"
-        ],
-        "technologies": [
-          "Ionic",
-          "REST APIs",
-          "Web Technologies",
-          ".NET",
-          "Mobile Development",
-          "Python"          
+          "SNMP",
+          "ASP .NET",
+          "VPN",
+          "Network Infrastructure"
         ],
         "media": {
           "type": "image",
           "src": "/images/projects/noc/poster.jpg",
           "poster": "/images/projects/noc/poster.jpg"
         },
-        "links": {}
+        "links": {
+          "caseStudy": true
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "Eninetworks was a rapidly growing wireless ISP providing connectivity to regions where fiber infrastructure was not available. The accelerated growth exposed critical operational gaps in IP address management, network visibility, and internal coordination."
+            },
+            {
+              "type": "problem",
+              "content": "Core network operations relied on shared Excel files to manage IP allocations, customer assignments, and infrastructure planning. This caused duplicated IP usage, inactive clients consuming resources, lack of traceability, and severe operational risk as the network scaled nationwide."
+            },
+            {
+              "type": "solution",
+              "content": "I designed and developed a set of internal platforms to replace Excel-based workflows with centralized, role-based systems that provided real-time visibility, automated reporting, and structured network data across all regions."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Modeling a nationwide ISP infrastructure hierarchy (regions, nodes, sectors, segments, IPs)",
+                "Ensuring data consistency and traceability across thousands of network assets",
+                "Integrating third-party network equipment data using SNMP",
+                "Automating data collection across VPN-connected remote nodes",
+                "Designing secure role-based access for multiple departments"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Recovered control over IP address allocation and customer assignments",
+                "Identified inactive clients and unauthorized IP usage",
+                "Eliminated Excel as the source of truth across NOC, Core IP, and Infrastructure teams",
+                "Enabled real-time reporting and data-driven network decisions",
+                "Improved operational coordination across multiple regions nationwide"
+              ]
+            }
+          ]
+        }
       },
       {
         "title": "EniCam",
         "subtitle": "Cross-Platform Camera Monitoring App",
         "featured": false,
-        "description": "Mobile application for real-time camera monitoring on iOS and Android, allowing users to securely view and manage live video feeds remotely.",
-        "bullets": [
-          "Implemented real-time streaming and remote camera access",
-          "Focused on usability, reliability, and performance under live data conditions",
-          "Delivered a consistent mobile experience across platforms"
-        ],
+        "description": "Cross-platform mobile application for secure real-time camera monitoring on iOS and Android.",
         "technologies": [
           "iOS",
           "Android",
           "Streaming",
-          "Mobile UI",
-          "Java",
-          "WildFly serverr",
-          "API integration",
-          "ionic"
+          "Ionic",
+          "API Integration"
         ],
         "media": {
           "type": "icon",
-          "src": "📷"
+          "src": "📹"
         },
         "links": {
           "appStore": "https://apps.apple.com/mx/app/enicam/id1541710259"

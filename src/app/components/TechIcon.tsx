@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-export function TechIcon({ name, size = 20, className }: Props) {
+export function TechIcon({ name, size = 25, className }: Props) {
   const Icon = techIconMap[name.toLowerCase()] || Code2;
   return <Icon size={size} className={className} />;
 }
