@@ -284,6 +284,7 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
+    "disclosure": "Mostrando proyectos seleccionados. Proyectos adicionales disponibles por solicitación.",
     "items": [
       {
         "title": "Wells Fargo Mobile Banking App",

@@ -187,6 +187,9 @@ export function Projects() {
             </motion.div>
           ))}
         </div>
+        <div className="mt-12 text-center text-sm text-gray-400 border-t border-gray-800 pt-6">
+          <p>{data.projects.disclosure}</p>
+        </div>
       </div>
       {activeCaseStudy && (
         <CaseStudyModal
