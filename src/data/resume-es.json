@@ -6,8 +6,20 @@
     "description": "Ingeniero de Software Senior con más de 7 años de experiencia diseñando y desarrollando productos digitales escalables y de alto impacto en plataformas móviles y web. Especializado en desarrollo iOS, arquitecturas modernas de frontend y sistemas empresariales utilizados por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y arquitectura mantenible.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
-    "phone": "+52 442 333 0132",
-    "location": "Santiago de Querétaro, México",
+    "phone": [
+      {
+        "label": "🇺🇸 USA",
+        "number": "+1 510 757 1281"
+      },
+      {
+        "label": "🇲🇽 MX",
+        "number": "+52 442 333 0132"
+      }
+    ],
+    "location": [
+      "📍San Francisco Bay Area, CA, USA",
+      "📍Santiago de Querétaro, México"
+    ],
     "resumeFile": "/docs/resume.pdf"
   },
   "socialLinks": {

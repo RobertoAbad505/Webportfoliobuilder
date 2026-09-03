@@ -5,9 +5,21 @@
     "title": "Senior Software Engineer",
     "description": "Senior Software Engineer with 8+ years of experience designing and building scalable, high-impact products across mobile and web platforms. Specialized in iOS development, modern frontend architectures, and enterprise-grade systems used by millions of users. Strong focus on performance, accessibility, and maintainable architecture.",
     "avatar": "/images/hero-avatar.jpeg",
-    "email": "roberto1985nieves@gmail.com",
-    "phone": "+1 (510) 757-1281 USA",
-    "location": "U.S.A",
+    "email": "roberto.rmzabad@gmail.com",
+    "phone": [
+      {
+        "label": "🇺🇸 USA",
+        "number": "+1 510 757 1281"
+      },
+      {
+        "label": "🇲🇽 MX",
+        "number": "+52 442 333 0132"
+      }
+    ],
+    "location": [
+      "📍San Francisco Bay Area, CA, USA",
+      "📍Santiago de Querétaro, México"
+    ],
     "resumeFile": "/docs/resume.pdf"
   },
   "socialLinks": {

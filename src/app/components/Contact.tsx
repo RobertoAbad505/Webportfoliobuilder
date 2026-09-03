@@ -17,20 +17,45 @@ export function Contact() {
     {
       icon: Mail,
       label: data.contact.labels.email,
-      value: data.personalInfo.email,
-      href: `mailto:${data.personalInfo.email}`,
+      content: (
+        <a
+          href={`mailto:${data.personalInfo.email}`}
+          className="text-gray-200 hover:text-blue-400 transition-colors"
+        >
+          {data.personalInfo.email}
+        </a>
+      ),
     },
     {
       icon: Phone,
       label: data.contact.labels.phone,
-      value: data.personalInfo.phone,
-      href: `tel:${data.personalInfo.phone.replace(/\s/g, '')}`,
+      content: (
+        <div className="flex flex-col gap-1">
+          {data.personalInfo.phone.map((phone) => (
+            <a
+              key={phone.label}
+              href={`tel:${phone.number.replace(/\s/g, '')}`}
+              className="text-gray-200 hover:text-blue-400 transition-colors"
+            >
+              <span className="text-gray-400 mr-2">{phone.label}</span>
+              {phone.number}
+            </a>
+          ))}
+        </div>
+      ),
     },
     {
       icon: MapPin,
       label: data.contact.labels.location,
-      value: data.personalInfo.location,
-      href: null,
+      content: (
+        <div className="flex flex-col gap-1">
+          {data.personalInfo.location.map((location) => (
+            <p key={location} className="text-gray-200">
+              {location}
+            </p>
+          ))}
+        </div>
+      ),
     },
   ];
 
@@ -48,35 +73,30 @@ export function Contact() {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                {contactInfo.map((info, index) => (
+              {contactInfo.map((info, index) => (
+                <motion.div
+                  key={index}
+                  className="text-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
                   <motion.div
-                    key={index}
-                    className="text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm flex items-center justify-center border border-blue-500/30"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <motion.div
-                      className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm flex items-center justify-center border border-blue-500/30"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                    >
-                      <info.icon size={24} className="text-blue-400" />
-                    </motion.div>
-                    <p className="text-sm text-gray-400 mb-1">{info.label}</p>
-                    {info.href ? (
-                      <a
-                        href={info.href}
-                        className="text-gray-200 hover:text-blue-400 transition-colors"
-                      >
-                        {info.value}
-                      </a>
-                    ) : (
-                      <p className="text-gray-200">{info.value}</p>
-                    )}
+                    <info.icon size={24} className="text-blue-400" />
                   </motion.div>
-                ))}
+
+                  <p className="text-sm text-gray-400 mb-2">
+                    {info.label}
+                  </p>
+
+                  {info.content}
+                </motion.div>
+              ))}
               </div>
 
               {data.socialLinks.calendly && (
