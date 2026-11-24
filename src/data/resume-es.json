@@ -3,7 +3,7 @@
     "salutMessage": "Hola, soy",
     "name": "Roberto Abad Ramirez Nieves",
     "title": "Senior Software Engineer",
-    "description": "Ingeniero de Software Senior con más de 7 años de experiencia diseñando y desarrollando productos digitales escalables y de alto impacto en plataformas móviles y web. Especializado en desarrollo iOS, arquitecturas modernas de frontend y sistemas empresariales utilizados por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y arquitectura mantenible.",
+    "description": "Ingeniero de Software Senior con más de 9 años de experiencia diseñando y desarrollando productos digitales escalables y de alto impacto en plataformas móviles y web. Especializado en desarrollo iOS, arquitecturas modernas de frontend y sistemas empresariales utilizados por millones de usuarios, con un fuerte enfoque en rendimiento, accesibilidad y arquitectura mantenible.",
     "avatar": "/images/hero-avatar.jpeg",
     "email": "roberto.rmzabad@gmail.com",
     "phone": [
@@ -415,6 +415,9 @@
           "caseStudy": true
         },
         "caseStudy": {
+          "gallery": {
+            "folder": "wuflow"
+          },
           "sections": [
             {
               "type": "overview",

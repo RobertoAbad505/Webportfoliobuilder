@@ -4,8 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite"
+    "predev": "node scripts/generate-project-gallery.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/generate-project-gallery.mjs",
+    "build": "tsc -b && vite build"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",

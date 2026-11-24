@@ -9,7 +9,7 @@
     "phone": [
       {
         "label": "🇺🇸 USA",
-        "number": "+1 510 757 1281"
+        "number": "+1 341 345 7612"
       },
       {
         "label": "🇲🇽 MX",
@@ -415,6 +415,9 @@
           "caseStudy": true
         },
         "caseStudy": {
+          "gallery": {
+            "folder": "wuflow"
+          },
           "sections": [
             {
               "type": "overview",

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { TechIcon } from './TechIcon';
 import { ProjectMedia } from './ProjectMedia';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { ProjectGallery } from './ProjectGallery';
 
 interface CaseStudyModalProps {
   project: any;
@@ -129,6 +130,12 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
                 )}
               </section>
             ))}
+
+            {project.caseStudy?.gallery?.folder && (
+              <ProjectGallery
+                folder={project.caseStudy.gallery.folder}
+              />
+            )}
 
             {/* Skills reused from project */}
             <section>
