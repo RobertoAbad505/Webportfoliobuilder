@@ -57,52 +57,145 @@
         "icon": "users"
       }
     ]
-  },  
+  },
   "skills": {
     "title": "Skills & Technologies",
     "categories": {
       "iOS & Mobile Development": [
-        { "name": "Swift", "icon": "swift" },
-        { "name": "SwiftUI", "icon": "swiftui" },
-        { "name": "UIKit", "icon": "uikit" },
-        { "name": "Combine", "icon": "combine" },
-        { "name": "iOS Accessibility (VoiceOver, Dynamic Type)", "icon": "accessibility" },
-        { "name": "Modular & Clean Architecture (MVVM, layered design)", "icon": "architecture" }
+        {
+          "name": "Swift",
+          "icon": "swift"
+        },
+        {
+          "name": "SwiftUI",
+          "icon": "swiftui"
+        },
+        {
+          "name": "UIKit",
+          "icon": "uikit"
+        },
+        {
+          "name": "Combine",
+          "icon": "combine"
+        },
+        {
+          "name": "iOS Accessibility (VoiceOver, Dynamic Type)",
+          "icon": "accessibility"
+        },
+        {
+          "name": "Modular & Clean Architecture (MVVM, layered design)",
+          "icon": "architecture"
+        }
       ],
       "Web Frontend": [
-        { "name": "HTML5", "icon": "html" },
-        { "name": "CSS3 / Tailwind CSS", "icon": "css" },
-        { "name": "JavaScript / TypeScript", "icon": "javascript" },
-        { "name": "React", "icon": "react" },
-        { "name": "Vite", "icon": "vite" }
+        {
+          "name": "HTML5",
+          "icon": "html"
+        },
+        {
+          "name": "CSS3 / Tailwind CSS",
+          "icon": "css"
+        },
+        {
+          "name": "JavaScript / TypeScript",
+          "icon": "javascript"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite"
+        }
       ],
       "Backend & API Integration": [
-        { "name": "RESTful APIs", "icon": "api" },
-        { "name": "GraphQL", "icon": "graphql" },
-        { "name": "Apollo GraphQL (Client & Schema Integration)", "icon": "apollo" },
-        { "name": "Django (API-driven services)", "icon": "django" },
-        { "name": ".NET / C#", "icon": "dotnet" },
-        { "name": "Java Spring", "icon": "spring" }
+        {
+          "name": "RESTful APIs",
+          "icon": "api"
+        },
+        {
+          "name": "GraphQL",
+          "icon": "graphql"
+        },
+        {
+          "name": "Apollo GraphQL (Client & Schema Integration)",
+          "icon": "apollo"
+        },
+        {
+          "name": "Django (API-driven services)",
+          "icon": "django"
+        },
+        {
+          "name": ".NET / C#",
+          "icon": "dotnet"
+        },
+        {
+          "name": "Java Spring",
+          "icon": "spring"
+        }
       ],
       "Databases & Data Modeling": [
-        { "name": "SQL Server", "icon": "sqlserver" },
-        { "name": "PostgreSQL", "icon": "postgresql" },
-        { "name": "MySQL", "icon": "mysql" },
-        { "name": "Stored Procedures & Query Optimization", "icon": "sqlserver" }
+        {
+          "name": "SQL Server",
+          "icon": "sqlserver"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Stored Procedures & Query Optimization",
+          "icon": "sqlserver"
+        }
       ],
       "Cloud, CI/CD & Infrastructure": [
-        { "name": "CI/CD Pipelines", "icon": "cicd" },
-        { "name": "Jenkins CI/CD", "icon": "jenkins" },
-        { "name": "Firebase Hosting", "icon": "firebase" },
-        { "name": "IIS Server Administration", "icon": "server" }
+        {
+          "name": "CI/CD Pipelines",
+          "icon": "cicd"
+        },
+        {
+          "name": "Jenkins CI/CD",
+          "icon": "jenkins"
+        },
+        {
+          "name": "Firebase Hosting",
+          "icon": "firebase"
+        },
+        {
+          "name": "IIS Server Administration",
+          "icon": "server"
+        }
       ],
       "Engineering Practices": [
-        { "name": "Git & Version Control", "icon": "git" },
-        { "name": "Agile / Scrum", "icon": "agile" },
-        { "name": "Clean & Scalable Architecture", "icon": "architecture" },
-        { "name": "Legacy System Modernization", "icon": "refactor" },
-        { "name": "Performance Optimization", "icon": "performance" },
-        { "name": "Concurrency & Multi-Threading", "icon": "multithread" }
+        {
+          "name": "Git & Version Control",
+          "icon": "git"
+        },
+        {
+          "name": "Agile / Scrum",
+          "icon": "agile"
+        },
+        {
+          "name": "Clean & Scalable Architecture",
+          "icon": "architecture"
+        },
+        {
+          "name": "Legacy System Modernization",
+          "icon": "refactor"
+        },
+        {
+          "name": "Performance Optimization",
+          "icon": "performance"
+        },
+        {
+          "name": "Concurrency & Multi-Threading",
+          "icon": "multithread"
+        }
       ]
     }
   },
@@ -271,7 +364,7 @@
         ],
         "gpa": ""
       }
-    ],  
+    ],
     "coursesTitle": "Courses & Certifications",
     "courses": [
       {
@@ -298,6 +391,78 @@
     "title": "Featured Projects",
     "disclosure": "Selected projects shown. Additional projects available upon request.",
     "items": [
+      {
+        "id": "wuflow",
+        "title": "WuFlow",
+        "subtitle": "Native iOS · Personal Productivity · Behavioral Tracking",
+        "featured": true,
+        "description": "A native iOS application exploring a more intentional approach to personal productivity. WuFlow combines activity and progress tracking, behavioral observations, deterministic insights, location-aware sessions, and Apple Health integrations.",
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "SwiftData",
+          "CoreLocation",
+          "HealthKit",
+          "ActivityKit"
+        ],
+        "media": {
+          "type": "image",
+          "src": "/images/projects/wuflow/poster.jpeg",
+          "poster": "/images/projects/wuflow/poster.jpeg"
+        },
+        "links": {
+          "github": "https://github.com/RobertoAbad505/WuFlow",
+          "caseStudy": true
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "WuFlow is an independent native iOS project inspired by the Taoist concept of Wu Wei: finding a natural flow through intentional action. It is designed to help people record activities, understand behavioral patterns, and build routines with more awareness. The project is also an exploration of maintainable iOS architecture and meaningful integration with Apple's native frameworks."
+            },
+            {
+              "type": "problem",
+              "content": "Many habit and productivity tools focus primarily on task completion or streaks. That can leave out useful context: what happened, where it happened, how often it occurs, and what the person noticed along the way. WuFlow explores a richer model that brings activity progress, observations, incidents, and contextual sessions together."
+            },
+            {
+              "type": "solution",
+              "content": "WuFlow models activities according to the behavior a person wants to build, maintain, or reduce. Users can record progress and observations, review behavior over time, and explore deterministic insights. Native integrations extend the experience: HealthKit can provide supported health data, while Core Location geofencing can recognize saved places and support activity sessions. ActivityKit and notifications provide contextual feedback during supported sessions."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Separating SwiftUI presentation from domain calculations and persistence responsibilities",
+                "Modeling activities, progress records, observations, places, and place sessions with SwiftData",
+                "Keeping behavioral calculations deterministic and independently testable",
+                "Coordinating location events, session state, notifications, and Live Activity updates",
+                "Synchronizing HealthKit data without creating duplicate progress records"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Built a native SwiftUI application with local SwiftData persistence",
+                "Implemented activity tracking, progress history, behavioral observations, and incident tracking",
+                "Added calendar-based behavior exploration and deterministic insight calculations",
+                "Integrated location-aware place sessions and HealthKit-based tracking",
+                "Explored native notifications and Live Activities as part of the activity-session experience"
+              ]
+            },
+            {
+              "type": "skills",
+              "bullets": [
+                "Swift and SwiftUI",
+                "SwiftData and data modeling",
+                "Repository pattern and dependency injection",
+                "Swift Concurrency and actors",
+                "Core Location and geofencing",
+                "HealthKit, UserNotifications, and ActivityKit",
+                "Domain modeling and unit testing"
+              ]
+            }
+          ]
+        }
+      },
       {
         "title": "Wells Fargo Mobile Banking App",
         "subtitle": "iOS · Enterprise Banking",
@@ -373,7 +538,7 @@
             }
           ]
         }
-      },      
+      },
       {
         "id": "eninetworks-network-intelligence",
         "title": "Network Intelligence Platform",

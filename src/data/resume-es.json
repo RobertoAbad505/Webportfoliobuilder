@@ -9,7 +9,7 @@
     "phone": [
       {
         "label": "🇺🇸 USA",
-        "number": "+1 510 757 1281"
+        "number": "+1 341 345 7612"
       },
       {
         "label": "🇲🇽 MX",
@@ -57,52 +57,145 @@
         "icon": "users"
       }
     ]
-  },  
+  },
   "skills": {
     "title": "Habilidades y Tecnologías",
     "categories": {
       "Desarrollo iOS y Mobile": [
-        { "name": "Swift", "icon": "swift" },
-        { "name": "SwiftUI", "icon": "swiftui" },
-        { "name": "UIKit", "icon": "uikit" },
-        { "name": "Combine", "icon": "combine" },
-        { "name": "Accesibilidad en iOS (VoiceOver, Dynamic Type)", "icon": "accessibility" },
-        { "name": "Arquitectura modular y limpia (MVVM, diseño por capas)", "icon": "architecture" }
+        {
+          "name": "Swift",
+          "icon": "swift"
+        },
+        {
+          "name": "SwiftUI",
+          "icon": "swiftui"
+        },
+        {
+          "name": "UIKit",
+          "icon": "uikit"
+        },
+        {
+          "name": "Combine",
+          "icon": "combine"
+        },
+        {
+          "name": "Accesibilidad en iOS (VoiceOver, Dynamic Type)",
+          "icon": "accessibility"
+        },
+        {
+          "name": "Arquitectura modular y limpia (MVVM, diseño por capas)",
+          "icon": "architecture"
+        }
       ],
       "Frontend Web": [
-        { "name": "HTML5", "icon": "html" },
-        { "name": "CSS3 / Tailwind CSS", "icon": "css" },
-        { "name": "JavaScript / TypeScript", "icon": "javascript" },
-        { "name": "React", "icon": "react" },
-        { "name": "Vite", "icon": "vite" }
+        {
+          "name": "HTML5",
+          "icon": "html"
+        },
+        {
+          "name": "CSS3 / Tailwind CSS",
+          "icon": "css"
+        },
+        {
+          "name": "JavaScript / TypeScript",
+          "icon": "javascript"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite"
+        }
       ],
       "Backend e Integración de APIs": [
-        { "name": "APIs REST", "icon": "api" },
-        { "name": "GraphQL", "icon": "graphql" },
-        { "name": "Apollo GraphQL (integración de cliente y esquemas)", "icon": "apollo" },
-        { "name": "Django (servicios orientados a APIs)", "icon": "django" },
-        { "name": ".NET / C#", "icon": "dotnet" },
-        { "name": "Java Spring", "icon": "spring" }
+        {
+          "name": "APIs REST",
+          "icon": "api"
+        },
+        {
+          "name": "GraphQL",
+          "icon": "graphql"
+        },
+        {
+          "name": "Apollo GraphQL (integración de cliente y esquemas)",
+          "icon": "apollo"
+        },
+        {
+          "name": "Django (servicios orientados a APIs)",
+          "icon": "django"
+        },
+        {
+          "name": ".NET / C#",
+          "icon": "dotnet"
+        },
+        {
+          "name": "Java Spring",
+          "icon": "spring"
+        }
       ],
       "Bases de Datos y Modelado de Datos": [
-        { "name": "SQL Server", "icon": "sqlserver" },
-        { "name": "PostgreSQL", "icon": "postgresql" },
-        { "name": "MySQL", "icon": "mysql" },
-        { "name": "Procedimientos almacenados y optimización de consultas", "icon": "sqlserver" }
+        {
+          "name": "SQL Server",
+          "icon": "sqlserver"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "Procedimientos almacenados y optimización de consultas",
+          "icon": "sqlserver"
+        }
       ],
       "Infraestructura, Cloud y CI/CD": [
-        { "name": "Pipelines de CI/CD", "icon": "cicd" },
-        { "name": "Jenkins CI/CD", "icon": "jenkins" },
-        { "name": "Firebase Hosting", "icon": "firebase" },
-        { "name": "Administración de servidores IIS", "icon": "server" }
+        {
+          "name": "Pipelines de CI/CD",
+          "icon": "cicd"
+        },
+        {
+          "name": "Jenkins CI/CD",
+          "icon": "jenkins"
+        },
+        {
+          "name": "Firebase Hosting",
+          "icon": "firebase"
+        },
+        {
+          "name": "Administración de servidores IIS",
+          "icon": "server"
+        }
       ],
       "Prácticas de Ingeniería": [
-        { "name": "Git y control de versiones", "icon": "git" },
-        { "name": "Metodologías Ágiles / Scrum", "icon": "agile" },
-        { "name": "Arquitectura limpia y escalable", "icon": "architecture" },
-        { "name": "Modernización de sistemas legacy", "icon": "refactor" },
-        { "name": "Optimización de rendimiento", "icon": "performance" },
-        { "name": "Concurrencia y multihilo", "icon": "multithread" }
+        {
+          "name": "Git y control de versiones",
+          "icon": "git"
+        },
+        {
+          "name": "Metodologías Ágiles / Scrum",
+          "icon": "agile"
+        },
+        {
+          "name": "Arquitectura limpia y escalable",
+          "icon": "architecture"
+        },
+        {
+          "name": "Modernización de sistemas legacy",
+          "icon": "refactor"
+        },
+        {
+          "name": "Optimización de rendimiento",
+          "icon": "performance"
+        },
+        {
+          "name": "Concurrencia y multihilo",
+          "icon": "multithread"
+        }
       ]
     }
   },
@@ -298,6 +391,78 @@
     "title": "Proyectos Destacados",
     "disclosure": "Mostrando proyectos seleccionados. Proyectos adicionales disponibles por solicitación.",
     "items": [
+      {
+        "id": "wuflow",
+        "title": "WuFlow",
+        "subtitle": "iOS Nativo · Productividad Personal · Seguimiento del Comportamiento",
+        "featured": true,
+        "description": "Una aplicación nativa para iOS que explora un enfoque más consciente de la productividad personal. WuFlow combina el seguimiento de actividades y avances, observaciones de comportamiento, insights determinísticos, sesiones basadas en ubicación e integraciones con Apple Health.",
+        "technologies": [
+          "Swift",
+          "SwiftUI",
+          "SwiftData",
+          "CoreLocation",
+          "HealthKit",
+          "ActivityKit"
+        ],
+        "media": {
+          "type": "image",
+          "src": "/images/projects/wuflow/poster.jpeg",
+          "poster": "/images/projects/wuflow/poster.jpeg"
+        },
+        "links": {
+          "github": "https://github.com/RobertoAbad505/WuFlow",
+          "caseStudy": true
+        },
+        "caseStudy": {
+          "sections": [
+            {
+              "type": "overview",
+              "content": "WuFlow es un proyecto independiente de desarrollo nativo para iOS, inspirado en el concepto taoísta de Wu Wei: encontrar un estado de fluidez a través de acciones intencionales. Su objetivo es ayudar a las personas a registrar sus actividades, comprender patrones de comportamiento y construir rutinas con mayor consciencia. También es una exploración de arquitectura mantenible para iOS e integración con los frameworks nativos de Apple."
+            },
+            {
+              "type": "problem",
+              "content": "Muchas herramientas de hábitos y productividad se enfocan principalmente en completar tareas o mantener rachas. Esto puede dejar fuera información valiosa: qué ocurrió, dónde ocurrió, con qué frecuencia y qué observó la persona durante el proceso. WuFlow explora un modelo más completo que reúne avances de actividades, observaciones, incidentes y sesiones contextuales."
+            },
+            {
+              "type": "solution",
+              "content": "WuFlow permite modelar actividades según el comportamiento que una persona desea desarrollar, mantener o reducir. Los usuarios pueden registrar avances y observaciones, revisar su comportamiento a lo largo del tiempo y consultar insights determinísticos. Las integraciones nativas amplían la experiencia: HealthKit puede proporcionar datos de salud compatibles, mientras que Core Location y el geofencing permiten reconocer lugares guardados y gestionar sesiones asociadas a actividades. ActivityKit y las notificaciones ofrecen información contextual durante las sesiones compatibles."
+            },
+            {
+              "type": "technicalChallenges",
+              "bullets": [
+                "Separar la presentación en SwiftUI de los cálculos de dominio y las responsabilidades de persistencia",
+                "Modelar actividades, registros de progreso, observaciones, lugares y sesiones mediante SwiftData",
+                "Mantener los cálculos de comportamiento determinísticos y fáciles de probar de forma independiente",
+                "Coordinar eventos de ubicación, estado de sesiones, notificaciones y actualizaciones de Live Activities",
+                "Sincronizar datos de HealthKit evitando la creación de registros de progreso duplicados"
+              ]
+            },
+            {
+              "type": "outcome",
+              "bullets": [
+                "Desarrollo de una aplicación nativa con SwiftUI y persistencia local mediante SwiftData",
+                "Implementación de seguimiento de actividades, historial de progreso, observaciones e incidentes",
+                "Incorporación de exploración del comportamiento mediante calendario y cálculos de insights determinísticos",
+                "Integración de sesiones basadas en ubicación y seguimiento mediante HealthKit",
+                "Exploración de notificaciones nativas y Live Activities para ofrecer información durante las sesiones"
+              ]
+            },
+            {
+              "type": "skills",
+              "bullets": [
+                "Swift y SwiftUI",
+                "SwiftData y modelado de datos",
+                "Patrón Repository e inyección de dependencias",
+                "Swift Concurrency y actores",
+                "Core Location y geofencing",
+                "HealthKit, UserNotifications y ActivityKit",
+                "Modelado de dominio y pruebas unitarias"
+              ]
+            }
+          ]
+        }
+      },
       {
         "title": "Wells Fargo Mobile Banking App",
         "subtitle": "iOS · Banca Empresarial",
